@@ -9,7 +9,10 @@ export type MascotState =
   | 'greeting' | 'asleep' | 'reading' | 'writing' | 'running-commands'
   | 'searching-web' | 'searching-code' | 'testing' | 'committing'
   | 'waiting-for-you' | 'error' | 'compacting' | 'context-nearly-full'
-  | 'plan-progress' | 'server-running' | 'typing' | 'walking';
+  | 'plan-progress' | 'server-running' | 'typing' | 'walking'
+  | 'idle-wizard-hat' | 'thinking-wizard-hat' | 'reading-wizard-hat'
+  | 'writing-sunglasses' | 'running-commands-sunglasses' | 'greeting-crown'
+  | 'asleep-nightcap' | 'error-propeller-cap';
 
 export const MASCOT_STATES = artwork.states.map(({ name, title, description }) => ({
   name: name as MascotState, title, description,
@@ -65,7 +68,7 @@ function DonePlayback(props: ClaudeMascotProps) {
     label={finished ? undefined : props.label} />;
 }
 
-/** 22 explicit states. The host app supplies activity signals and screen movement. */
+/** Base states and accessory variants. The host app supplies activity signals. */
 export default function ClaudeMascot(props: ClaudeMascotProps) {
   return props.state === 'done' ? <DonePlayback {...props} /> : <SpriteMascot {...props} />;
 }
