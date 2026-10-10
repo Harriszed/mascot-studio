@@ -16,3 +16,9 @@ Before distributing the artwork publicly, resolve the permissions described in N
 Download `mascot-assets.zip` for the preview and assets, `mascot-studio.zip` for the complete skill, or `mascot-studio-source.zip` for the editable project and skill together. Node.js 18+ is required to rebuild; the generated preview opens directly in a browser.
 
 Unofficial community project. Reference animation: Ayotomiwa Wale-Durojaye. Claude character: Anthropic. See NOTICE.md for reuse status.
+
+## Reddit comparison GIF
+
+Use `reddit-mascot-showcase.gif` for a 12-second, 800px square loop showing original states alongside all eight accessory variants. An MP4 alternative and still cover are included.
+
+To regenerate on Windows: install Pillow for Python, then run `python scripts/render-reddit-showcase.py`. The renderer reads the current source poses through Node.js and uses Windows Segoe UI fonts. Export the MP4 with FFmpeg from the GIF if needed.
