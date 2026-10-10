@@ -1,0 +1,17 @@
+{
+  "name": "claude-mascot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "pack:assets": "node scripts/package-release.mjs",
+    "release": "npm run build && npm run pack:assets"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

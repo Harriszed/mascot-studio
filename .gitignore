@@ -1,0 +1,8 @@
+node_modules/
+output/preview-server.log
+output/preview-server.err.log
+
+output/
+.claude/
+.playwright-cli/
+release/
