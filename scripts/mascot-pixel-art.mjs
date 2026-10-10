@@ -232,10 +232,16 @@ function accessoryShapes(shapes, accessory) {
     rect(x + 36,y - 62,13,14,purple), rect(x + 39,y - 70,13,8,purple),
     rect(x + 6,y - 20,73,5,lavender), rect(x + 37,y - 41,7,17,GOLD), rect(x + 32,y - 36,17,7,GOLD),
   ];
-  if (accessory === 'sunglasses') return [
-    rect(x + 1,y + 11,83,5,INK), rect(x + 6,y + 9,27,19,INK), rect(x + 52,y + 9,27,19,INK),
-    rect(x + 11,y + 12,8,4,'#5A7885'), rect(x + 57,y + 12,8,4,'#5A7885'),
-  ];
+  if (accessory === 'sunglasses') {
+    // Follow the actual eyes, including the downward gaze in writing/commands.
+    const eyes = shapes.filter(s => s.fill === INK && s.w === 11 && s.h === 11
+      && s.x >= x && s.x < x + 85 && s.y >= y && s.y < y + 40).slice(0, 2);
+    if (eyes.length !== 2) throw new Error('Missing eye anchors for sunglasses');
+    const [left, right] = eyes.sort((a,b) => a.x - b.x);
+    return [rect(left.x - 9,left.y, right.x - left.x + 29,5,INK),
+      ...eyes.flatMap(eye => [rect(eye.x - 6,eye.y - 3,27,19,INK),
+        rect(eye.x - 1,eye.y,8,4,'#5A7885')])];
+  }
   if (accessory === 'crown') return [
     rect(x + 5,y - 14,75,14,GOLD), rect(x + 5,y - 30,10,16,GOLD),
     rect(x + 37,y - 37,11,23,GOLD), rect(x + 70,y - 30,10,16,GOLD),
