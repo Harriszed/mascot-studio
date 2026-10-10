@@ -1,4 +1,4 @@
-ï»¿# Claude pixel mascot / 22 states
+ï»¿# Claude pixel mascot / 22 base states + 8 accessory variants
 
 This pack contains one transparent animated SVG for each requested state, plus four source-reference exports for comparison. The resting character uses the website's actual gym sprite at its original proportions. The activity poses use explicit blocks and discrete frame changes; they do not rotate or skew the character into smooth vector silhouettes.
 
@@ -58,7 +58,7 @@ import type { MascotState } from '@/components/claude-mascot/ClaudeMascot';
 <ClaudeMascot state="walking" size={160} />
 ```
 
-`MascotState` includes exactly the 22 values above. `MASCOT_STATES` exposes their names, titles, and descriptions for selectors. Changing state restarts its pose sequence.
+`MascotState` includes the 22 base values above and the accessory variants below. `MASCOT_STATES` exposes their names, titles, and descriptions for selectors. Changing state restarts its pose sequence.
 
 `done` automatically returns to idle after five seconds of wall-clock time and calls `onDoneComplete` once. Switching away cancels the timer. Remount the component with a new React `key` if a second completion should replay while its input is still `done`. The five-second status window also applies with reduced motion, changed playback speed, or paused animation.
 
@@ -113,15 +113,32 @@ Reference artwork and original animation: [Ayotomiwa Wale-Durojaye's demo](https
 
 ## Regeneration
 
-`src/components/claude-mascot/reference-artwork.json` stores the measured reference shapes and timings. `scripts/mascot-pixel-art.mjs` builds all 22 pose sequences and compiles their CSS. From the project root, run:
+`src/components/claude-mascot/reference-artwork.json` stores the measured reference shapes and timings. `scripts/mascot-pixel-art.mjs` builds the base and accessory pose sequences and compiles their CSS. From the project root, run:
 
 ```sh
 npm run build
 npm run pack:assets
 ```
 
-Rebuild the ZIP after exports change. The downloadable pack contains all 22 state SVGs, all four reference SVGs, their manifests, and this guide. The previous smooth-vector attempts are preserved in `previous-version/` and excluded from the pack.
+Rebuild the ZIP after exports change. The downloadable pack contains all base and accessory SVGs, all four reference SVGs, their manifests, and this guide. The previous smooth-vector attempts are preserved in `previous-version/` and excluded from the pack.
 
 ## Reuse status
 
 See [NOTICE.md](NOTICE.md). Artwork redistribution permission remains unverified; no blanket commercial or open-source artwork license is granted.
+
+## Accessory variants
+
+The eight variants preserve their base activity, duration, and loop behavior. `baseState` and `accessory` are recorded in the manifest. All original states remain available.
+
+| Identifier | Base activity | Accessory |
+| --- | --- | --- |
+| `idle-wizard-hat` | `idle` | wizard hat |
+| `thinking-wizard-hat` | `thinking` | wizard hat |
+| `reading-wizard-hat` | `reading` | wizard hat |
+| `writing-sunglasses` | `writing` | black sunglasses |
+| `running-commands-sunglasses` | `running-commands` | black sunglasses |
+| `greeting-crown` | `greeting` | crown |
+| `asleep-nightcap` | `asleep` | nightcap |
+| `error-propeller-cap` | `error` | propeller cap |
+
+Use variants like any other state: `<ClaudeMascot state="thinking-wizard-hat" />`.

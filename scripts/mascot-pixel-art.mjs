@@ -144,7 +144,7 @@ function walkingFrames(reference) {
 }
 
 export function buildStates(reference) {
-  return stateDefinitions.map(([name, title, description, duration], number) => {
+  const baseStates = stateDefinitions.map(([name, title, description, duration], number) => {
     let frames;
     const draw = options => actor(reference, options);
     if (name === 'using-tool') frames = reference.animations.gym.frames.map(f => ({ time: f.time, shapes: shift(f.shapes, 19, 28) }));
@@ -198,6 +198,60 @@ export function buildStates(reference) {
     if (!frames) throw new Error(`Missing frames for ${name}`);
     return { number: number + 1, name, title, label: title, description, duration, loop: name !== 'done', viewBox: VIEW_BOX, frames };
   });
+  return [...baseStates, ...accessoryVariants.map(([baseState, accessory, title], index) => {
+    const base = baseStates.find(state => state.name === baseState);
+    return { ...base, number: baseStates.length + index + 1,
+      name: `${baseState}-${accessory}`, baseState, accessory, title, label: title,
+      description: `${base.description} Wearing ${accessory.replaceAll('-', ' ')}.`,
+      frames: base.frames.map(frame => ({ ...frame, shapes: [...frame.shapes, ...accessoryShapes(frame.shapes, accessory)] })),
+    };
+  })];
+}
+
+export const accessoryVariants = [
+  ['idle', 'wizard-hat', 'Idle / wizard hat'],
+  ['thinking', 'wizard-hat', 'Thinking / wizard hat'],
+  ['reading', 'wizard-hat', 'Reading / wizard hat'],
+  ['writing', 'sunglasses', 'Writing / sunglasses'],
+  ['running-commands', 'sunglasses', 'Commands / sunglasses'],
+  ['greeting', 'crown', 'Greeting / crown'],
+  ['asleep', 'nightcap', 'Asleep / nightcap'],
+  ['error', 'propeller-cap', 'Error / propeller cap'],
+];
+
+function accessoryShapes(shapes, accessory) {
+  // These variants use authored actors: their top torso block is an explicit
+  // 85px-wide rectangle, including each stepped lean and per-frame dx/dy.
+  const head = shapes.find(s => s.fill === CORAL && s.w === 85);
+  if (!head) throw new Error(`No authored head anchor for ${accessory}`);
+  const x = head.x, y = head.y;
+  const purple = '#6943AD', lavender = '#B994F2', blue = '#337FB7';
+  if (accessory === 'wizard-hat') return [
+    rect(x - 8,y - 8,101,8,purple), rect(x + 6,y - 20,73,12,purple),
+    rect(x + 16,y - 34,53,14,purple), rect(x + 26,y - 48,33,14,purple),
+    rect(x + 36,y - 62,13,14,purple), rect(x + 39,y - 70,13,8,purple),
+    rect(x + 6,y - 20,73,5,lavender), rect(x + 37,y - 41,7,17,GOLD), rect(x + 32,y - 36,17,7,GOLD),
+  ];
+  if (accessory === 'sunglasses') return [
+    rect(x + 1,y + 11,83,5,INK), rect(x + 6,y + 9,27,19,INK), rect(x + 52,y + 9,27,19,INK),
+    rect(x + 11,y + 12,8,4,'#5A7885'), rect(x + 57,y + 12,8,4,'#5A7885'),
+  ];
+  if (accessory === 'crown') return [
+    rect(x + 5,y - 14,75,14,GOLD), rect(x + 5,y - 30,10,16,GOLD),
+    rect(x + 37,y - 37,11,23,GOLD), rect(x + 70,y - 30,10,16,GOLD),
+    rect(x + 38,y - 12,9,8,RED), rect(x + 12,y - 8,5,5,PAPER), rect(x + 67,y - 8,5,5,PAPER),
+  ];
+  if (accessory === 'nightcap') return [
+    rect(x + 2,y - 7,81,7,PAPER), rect(x + 8,y - 22,69,15,blue),
+    rect(x + 18,y - 35,49,13,blue), rect(x + 38,y - 45,39,10,blue),
+    rect(x + 67,y - 35,20,10,blue), rect(x + 77,y - 25,10,10,blue),
+    rect(x + 76,y - 16,15,12,PAPER), rect(x + 30,y - 29,5,5,PAPER),
+  ];
+  return [
+    rect(x + 3,y - 7,79,7,blue), rect(x + 12,y - 19,61,12,RED),
+    rect(x + 25,y - 28,35,9,GOLD), rect(x + 40,y - 40,5,12,INK),
+    rect(x + 12,y - 45,61,5,GREEN), rect(x + 35,y - 48,15,11,GOLD),
+  ];
 }
 
 function colour(fill) {

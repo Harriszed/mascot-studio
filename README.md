@@ -1,12 +1,12 @@
 # Mascot Studio
 
-22 animated Claude mascot states, transparent SVG exports, a React component, and a reusable coding-agent skill for creating characters, activities, and accessories.
+22 animated Claude mascot states plus 8 accessory variants, transparent SVG exports, a React component, and a reusable coding-agent skill for creating characters, activities, and accessories.
 
-[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) · [**Download v1.0.0**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.0.0) · [**Creation skill**](skills/mascot-studio/SKILL.md)
+[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) · [**Download v1.1.0**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.1.0) · [**Creation skill**](skills/mascot-studio/SKILL.md)
 
 [![Animated showcase of Claude mascot activity states](sharing/mascot-showcase.gif)](https://harriszed.github.io/mascot-studio/mascot/)
 
-*A few of the activity states in motion. Click the preview to explore all 22, change speed, and download individual SVGs.*
+*A few of the activity states in motion. Click the preview to explore the full collection, change speed, and download individual SVGs.*
 
 ## Meet the states
 
@@ -34,13 +34,34 @@ Each tile opens its state in the live playground. If your Markdown viewer shows 
 
 </details>
 
+## Meet the states: made with the skill
+
+Eight new accessory variants created with Mascot Studio. The original poses and timing stay intact; the accessories follow the character through each frame.
+
+<table>
+  <tr>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#idle-wizard-hat"><img src="public/mascot/idle-wizard-hat.svg" width="150" alt="Idle / wizard hat" /></a><br /><strong>Idle / wizard hat</strong></td>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#thinking-wizard-hat"><img src="public/mascot/thinking-wizard-hat.svg" width="150" alt="Thinking / wizard hat" /></a><br /><strong>Thinking / wizard hat</strong></td>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#reading-wizard-hat"><img src="public/mascot/reading-wizard-hat.svg" width="150" alt="Reading / wizard hat" /></a><br /><strong>Reading / wizard hat</strong></td>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#writing-sunglasses"><img src="public/mascot/writing-sunglasses.svg" width="150" alt="Writing / sunglasses" /></a><br /><strong>Writing / sunglasses</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#running-commands-sunglasses"><img src="public/mascot/running-commands-sunglasses.svg" width="150" alt="Commands / sunglasses" /></a><br /><strong>Commands / sunglasses</strong></td>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#greeting-crown"><img src="public/mascot/greeting-crown.svg" width="150" alt="Greeting / crown" /></a><br /><strong>Greeting / crown</strong></td>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#asleep-nightcap"><img src="public/mascot/asleep-nightcap.svg" width="150" alt="Asleep / nightcap" /></a><br /><strong>Asleep / nightcap</strong></td>
+    <td align="center"><a href="https://harriszed.github.io/mascot-studio/mascot/#error-propeller-cap"><img src="public/mascot/error-propeller-cap.svg" width="150" alt="Error / propeller cap" /></a><br /><strong>Error / propeller cap</strong></td>
+  </tr>
+</table>
+
+Try a brief like: ?Add wizard hats to idle, thinking, and reading; black sunglasses to writing and running commands; a crown to greeting, a nightcap to asleep, and a propeller cap to error. Keep the originals.?
+
 ## Pick your download
 
 | You want to… | Download | Includes |
 | --- | --- | --- |
-| Use the ready-made animations | [Asset pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.0.0/mascot-assets.zip) | SVGs, preview, state mapping, and integration guide |
-| Install the creation skill | [Mascot Studio skill](https://github.com/Harriszed/mascot-studio/releases/download/v1.0.0/mascot-studio.zip) | Skill instructions, helper script, and pipeline reference |
-| Edit the mascots and create more | [Complete source](https://github.com/Harriszed/mascot-studio/releases/download/v1.0.0/mascot-studio-source.zip) | Editable project, preview, and skill together |
+| Use the ready-made animations | [Asset pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.1.0/mascot-assets.zip) | SVGs, preview, state mapping, and integration guide |
+| Install the creation skill | [Mascot Studio skill](https://github.com/Harriszed/mascot-studio/releases/download/v1.1.0/mascot-studio.zip) | Skill instructions, helper script, and pipeline reference |
+| Edit the mascots and create more | [Complete source](https://github.com/Harriszed/mascot-studio/releases/download/v1.1.0/mascot-studio-source.zip) | Editable project, preview, and skill together |
 
 > Unofficial community project. Reference animation by [Ayotomiwa Wale-Durojaye](https://ayotomcs.me/claude-mascot); Claude character by Anthropic. Artwork redistribution permission remains unverified. Read [attribution and reuse status](NOTICE.md).
 

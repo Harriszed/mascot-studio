@@ -401,6 +401,166 @@
       "poseCount": 12,
       "frameCount": 12,
       "file": "walking.svg"
+    },
+    {
+      "number": 23,
+      "name": "idle-wizard-hat",
+      "title": "Idle / wizard hat",
+      "label": "Idle / wizard hat",
+      "description": "Waiting for you. Wearing wizard hat.",
+      "duration": 4.8,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "idle",
+      "accessory": "wizard-hat",
+      "poseCount": 2,
+      "frameCount": 3,
+      "file": "idle-wizard-hat.svg"
+    },
+    {
+      "number": 24,
+      "name": "thinking-wizard-hat",
+      "title": "Thinking / wizard hat",
+      "label": "Thinking / wizard hat",
+      "description": "Working out an answer; no tool is running. Wearing wizard hat.",
+      "duration": 3.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "thinking",
+      "accessory": "wizard-hat",
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "thinking-wizard-hat.svg"
+    },
+    {
+      "number": 25,
+      "name": "reading-wizard-hat",
+      "title": "Reading / wizard hat",
+      "label": "Reading / wizard hat",
+      "description": "Opening and reading files. Wearing wizard hat.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "reading",
+      "accessory": "wizard-hat",
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "reading-wizard-hat.svg"
+    },
+    {
+      "number": 26,
+      "name": "writing-sunglasses",
+      "title": "Writing / sunglasses",
+      "label": "Writing / sunglasses",
+      "description": "Changing files. Wearing sunglasses.",
+      "duration": 1.6,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "writing",
+      "accessory": "sunglasses",
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "writing-sunglasses.svg"
+    },
+    {
+      "number": 27,
+      "name": "running-commands-sunglasses",
+      "title": "Commands / sunglasses",
+      "label": "Commands / sunglasses",
+      "description": "Terminal commands, installs, and builds. Wearing sunglasses.",
+      "duration": 1.6,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "running-commands",
+      "accessory": "sunglasses",
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "running-commands-sunglasses.svg"
+    },
+    {
+      "number": 28,
+      "name": "greeting-crown",
+      "title": "Greeting / crown",
+      "label": "Greeting / crown",
+      "description": "A new chat has opened. Wearing crown.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "greeting",
+      "accessory": "crown",
+      "poseCount": 4,
+      "frameCount": 12,
+      "file": "greeting-crown.svg"
+    },
+    {
+      "number": 29,
+      "name": "asleep-nightcap",
+      "title": "Asleep / nightcap",
+      "label": "Asleep / nightcap",
+      "description": "Idle for a long time; the cache has gone cold. Wearing nightcap.",
+      "duration": 4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "asleep",
+      "accessory": "nightcap",
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "asleep-nightcap.svg"
+    },
+    {
+      "number": 30,
+      "name": "error-propeller-cap",
+      "title": "Error / propeller cap",
+      "label": "Error / propeller cap",
+      "description": "A command or tool failed. Wearing propeller cap.",
+      "duration": 3.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "baseState": "error",
+      "accessory": "propeller-cap",
+      "poseCount": 3,
+      "frameCount": 7,
+      "file": "error-propeller-cap.svg"
     }
   ]
 }
