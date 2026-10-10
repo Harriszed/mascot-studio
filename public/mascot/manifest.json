@@ -1,0 +1,406 @@
+{
+  "version": 2,
+  "background": "transparent",
+  "viewBox": "-20 -40 240 220",
+  "color": "#DD775B",
+  "source": "https://ayotomcs.me/claude-mascot",
+  "doneDisplayMs": 5000,
+  "states": [
+    {
+      "number": 1,
+      "name": "idle",
+      "title": "Idle",
+      "label": "Idle",
+      "description": "Waiting for you.",
+      "duration": 4.8,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 2,
+      "frameCount": 3,
+      "file": "idle.svg"
+    },
+    {
+      "number": 2,
+      "name": "thinking",
+      "title": "Thinking",
+      "label": "Thinking",
+      "description": "Working out an answer; no tool is running.",
+      "duration": 3.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "thinking.svg"
+    },
+    {
+      "number": 3,
+      "name": "using-tool",
+      "title": "Using a tool",
+      "label": "Using a tool",
+      "description": "Doing work; the same activity animation for every tool.",
+      "duration": 5.625,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 30,
+      "frameCount": 48,
+      "file": "using-tool.svg"
+    },
+    {
+      "number": 4,
+      "name": "directing-helpers",
+      "title": "Directing helpers",
+      "label": "Directing helpers",
+      "description": "Helper agents are running.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "directing-helpers.svg"
+    },
+    {
+      "number": 5,
+      "name": "done",
+      "title": "Done",
+      "label": "Done",
+      "description": "Just finished. Returns to idle after five seconds.",
+      "duration": 5,
+      "loop": false,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 8,
+      "frameCount": 41,
+      "file": "done.svg"
+    },
+    {
+      "number": 6,
+      "name": "greeting",
+      "title": "Waking up / greeting",
+      "label": "Waking up / greeting",
+      "description": "A new chat has opened.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 12,
+      "file": "greeting.svg"
+    },
+    {
+      "number": 7,
+      "name": "asleep",
+      "title": "Asleep",
+      "label": "Asleep",
+      "description": "Idle for a long time; the cache has gone cold.",
+      "duration": 4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "asleep.svg"
+    },
+    {
+      "number": 8,
+      "name": "reading",
+      "title": "Reading",
+      "label": "Reading",
+      "description": "Opening and reading files.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "reading.svg"
+    },
+    {
+      "number": 9,
+      "name": "writing",
+      "title": "Writing / editing",
+      "label": "Writing / editing",
+      "description": "Changing files.",
+      "duration": 1.6,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "writing.svg"
+    },
+    {
+      "number": 10,
+      "name": "running-commands",
+      "title": "Running commands",
+      "label": "Running commands",
+      "description": "Terminal commands, installs, and builds.",
+      "duration": 1.6,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "running-commands.svg"
+    },
+    {
+      "number": 11,
+      "name": "searching-web",
+      "title": "Searching the web",
+      "label": "Searching the web",
+      "description": "Web searches and fetching pages.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 6,
+      "frameCount": 8,
+      "file": "searching-web.svg"
+    },
+    {
+      "number": 12,
+      "name": "searching-code",
+      "title": "Searching code",
+      "label": "Searching code",
+      "description": "Looking through files for something.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 6,
+      "frameCount": 8,
+      "file": "searching-code.svg"
+    },
+    {
+      "number": 13,
+      "name": "testing",
+      "title": "Testing",
+      "label": "Testing",
+      "description": "Running tests.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 8,
+      "frameCount": 8,
+      "file": "testing.svg"
+    },
+    {
+      "number": 14,
+      "name": "committing",
+      "title": "Committing / pushing",
+      "label": "Committing / pushing",
+      "description": "Saving work to git.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 6,
+      "frameCount": 8,
+      "file": "committing.svg"
+    },
+    {
+      "number": 15,
+      "name": "waiting-for-you",
+      "title": "Waiting for you",
+      "label": "Waiting for you",
+      "description": "Needs your permission or an answer to a question.",
+      "duration": 4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 2,
+      "frameCount": 8,
+      "file": "waiting-for-you.svg"
+    },
+    {
+      "number": 16,
+      "name": "error",
+      "title": "Error",
+      "label": "Error",
+      "description": "A command or tool failed.",
+      "duration": 3.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 3,
+      "frameCount": 7,
+      "file": "error.svg"
+    },
+    {
+      "number": 17,
+      "name": "compacting",
+      "title": "Compacting",
+      "label": "Compacting",
+      "description": "Tidying up memory when the chat gets long.",
+      "duration": 2.8,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 3,
+      "frameCount": 8,
+      "file": "compacting.svg"
+    },
+    {
+      "number": 18,
+      "name": "context-nearly-full",
+      "title": "Context nearly full",
+      "label": "Context nearly full",
+      "description": "Memory is over 80%.",
+      "duration": 3.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "context-nearly-full.svg"
+    },
+    {
+      "number": 19,
+      "name": "plan-progress",
+      "title": "Plan progress",
+      "label": "Plan progress",
+      "description": "Ticking off the to-do list.",
+      "duration": 3.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "plan-progress.svg"
+    },
+    {
+      "number": 20,
+      "name": "server-running",
+      "title": "Server running",
+      "label": "Server running",
+      "description": "Your dev server or Expo is on.",
+      "duration": 4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "server-running.svg"
+    },
+    {
+      "number": 21,
+      "name": "typing",
+      "title": "You're typing",
+      "label": "You're typing",
+      "description": "You have started writing a message.",
+      "duration": 2.4,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 4,
+      "frameCount": 8,
+      "file": "typing.svg"
+    },
+    {
+      "number": 22,
+      "name": "walking",
+      "title": "Walking",
+      "label": "Walking",
+      "description": "The reference walk cycle, looping in place for your app to move.",
+      "duration": 0.2,
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 12,
+      "frameCount": 12,
+      "file": "walking.svg"
+    }
+  ]
+}

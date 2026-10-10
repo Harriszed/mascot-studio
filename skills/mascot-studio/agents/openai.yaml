@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mascot Studio"
+  short_description: "Create mascots, animations, hats, and accessories"
+  default_prompt: "Use $mascot-studio with my mascot source folder and ask what characters, animations, or accessories I want to create."

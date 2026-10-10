@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180" class="cm-root" data-state="loading" role="img" aria-label="Loading">
+<title>Loading</title>
+<style>
+.cm-root { overflow: visible; isolation: isolate; }
+.cm-root .cm-actor { transform-box: view-box; transform-origin: 100px 150px; }
+.cm-root .cm-body { transform-box: view-box; transform-origin: 100px 129px; }
+.cm-root .cm-arm-left { transform-box: view-box; transform-origin: 62px 90px; }
+.cm-root .cm-arm-right { transform-box: view-box; transform-origin: 136px 90px; }
+.cm-root .cm-leg { transform-box: view-box; }
+.cm-root .cm-leg-a { transform-origin: 62.5px 122px; }
+.cm-root .cm-leg-b { transform-origin: 83.5px 122px; }
+.cm-root .cm-leg-c { transform-origin: 115.5px 122px; }
+.cm-root .cm-leg-d { transform-origin: 136.5px 122px; }
+.cm-root .cm-eye { transform-box: fill-box; transform-origin: center; animation: cm-blink calc(4.8s * var(--cm-tempo, 1)) linear var(--cm-repeat, infinite); }
+.cm-root .cm-cue, .cm-root .cm-wave-bridge { display: none; }
+.cm-root[data-state="idle"] .cm-body { animation: cm-breathe calc(4.8s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+
+.cm-root[data-state="idle-curious"] .cm-body { animation: cm-idle-curious calc(6.4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="idle-curious"] .cm-gaze { animation: cm-idle-glance calc(6.4s * var(--cm-tempo, 1)) cubic-bezier(.22, 1, .36, 1) var(--cm-repeat, infinite); }
+.cm-root[data-state="idle-sway"] .cm-body { animation: cm-idle-sway calc(6s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="idle-stretch"] .cm-body { animation: cm-idle-stretch calc(7.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="idle-stretch"] .cm-arm-left { animation: cm-idle-stretch-left calc(7.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="idle-stretch"] .cm-arm-right { animation: cm-idle-stretch-right calc(7.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="idle-stretch"] .cm-eye { animation: cm-idle-squint calc(7.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="thinking"] .cm-body { animation: cm-think calc(3.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="thinking"] .cm-gaze { animation: cm-look calc(3.2s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite); }
+.cm-root[data-state="thinking"] .cm-thought { display: inline; }
+.cm-root[data-state="thinking"] .cm-dot { animation: cm-dot calc(1.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root .cm-dot-b { animation-delay: calc(-.4s * var(--cm-tempo, 1)) !important; }
+.cm-root .cm-dot-c { animation-delay: calc(-.8s * var(--cm-tempo, 1)) !important; }
+.cm-root[data-state="loading"] .cm-progress { display: inline; }
+.cm-root[data-state="loading"] .cm-body { animation: cm-bob calc(1.6s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="loading"] .cm-orbit { transform-box: view-box; transform-origin: 101px 46px; animation: cm-orbit calc(1.6s * var(--cm-tempo, 1)) steps(8, end) var(--cm-repeat, infinite); }
+.cm-root[data-state="listening"] .cm-body { transform: rotate(4deg) translateX(2px); animation: cm-listen calc(2.4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="listening"] .cm-gaze { transform: translate(3px, 1px); }
+.cm-root[data-state="listening"] .cm-listen { display: inline; }
+.cm-root[data-state="listening"] .cm-signal { animation: cm-signal calc(2.4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root .cm-signal-b { animation-delay: calc(-.3s * var(--cm-tempo, 1)) !important; }
+.cm-root[data-state="speaking"] .cm-waveform { display: inline; }
+.cm-root[data-state="speaking"] .cm-bar { transform-box: fill-box; transform-origin: center; animation: cm-bar calc(1.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root .cm-bar-b, .cm-root .cm-bar-e { animation-delay: calc(-.4s * var(--cm-tempo, 1)) !important; }
+.cm-root .cm-bar-c { animation-delay: calc(-.7s * var(--cm-tempo, 1)) !important; }
+.cm-root .cm-bar-d { animation-delay: calc(-.2s * var(--cm-tempo, 1)) !important; }
+.cm-root[data-state="speaking"] .cm-body { animation: cm-bob calc(1.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="speaking"] .cm-arm-right { animation: cm-gesture calc(1.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="success"] .cm-celebrate { display: inline; }
+.cm-root[data-state="success"] .cm-actor { animation: cm-hop calc(2.8s * var(--cm-tempo, 1)) linear var(--cm-repeat, infinite); }
+.cm-root[data-state="success"] .cm-arm-left { animation: cm-cheer-left calc(2.8s * var(--cm-tempo, 1)) ease-out var(--cm-repeat, infinite); }
+.cm-root[data-state="success"] .cm-arm-right { animation: cm-cheer-right calc(2.8s * var(--cm-tempo, 1)) ease-out var(--cm-repeat, infinite); }
+.cm-root[data-state="success"] .cm-confetti { transform-box: fill-box; transform-origin: center; animation: cm-confetti calc(2.8s * var(--cm-tempo, 1)) ease-out var(--cm-repeat, infinite); }
+.cm-root .cm-confetti-b, .cm-root .cm-confetti-d, .cm-root .cm-confetti-f { animation-name: cm-confetti-right !important; }
+.cm-root[data-state="error"] .cm-alert { display: inline; }
+.cm-root[data-state="error"] .cm-actor { animation: cm-shake calc(3.2s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="error"] .cm-eye { transform: scaleY(.65); }
+.cm-root[data-state="sleeping"] .cm-sleep { display: inline; }
+.cm-root[data-state="sleeping"] .cm-eye { animation: none; transform: scaleY(.22); }
+.cm-root[data-state="sleeping"] .cm-body { transform: translateY(3px); animation: cm-sleep-breathe calc(4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="sleeping"] .cm-z { animation: cm-drift calc(4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root .cm-z-b { animation-delay: calc(-2s * var(--cm-tempo, 1)) !important; }
+.cm-root[data-state="waving"] .cm-arm-right { transform: translateY(-28px); animation: cm-wave calc(2.4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="waving"] .cm-wave-bridge { display: inline; }
+.cm-root[data-state="waving"] .cm-body { animation: cm-friendly calc(2.4s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="walking"] .cm-body { animation: cm-walk-body calc(.96s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="walking"] .cm-gaze { transform: translateX(3px); }
+.cm-root[data-state="walking"] .cm-leg { animation: cm-stride calc(.96s * var(--cm-tempo, 1)) linear var(--cm-repeat, infinite); }
+.cm-root[data-state="walking"] .cm-leg-b, .cm-root[data-state="walking"] .cm-leg-d { animation-delay: calc(-.48s * var(--cm-tempo, 1)); }
+.cm-root[data-state="walking"] .cm-arm-left { animation: cm-walk-arm calc(.96s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite); }
+.cm-root[data-state="walking"] .cm-arm-right { animation: cm-walk-arm calc(.96s * var(--cm-tempo, 1)) ease-in-out var(--cm-repeat, infinite) reverse; }
+.cm-root * { animation-fill-mode: both; }
+.cm-root[data-paused="true"] * { animation-play-state: paused !important; }
+@keyframes cm-blink { 0%, 42%, 46%, 100% { transform: scaleY(1); } 43%, 45% { transform: scaleY(.12); } }
+@keyframes cm-breathe { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(1.035); } }
+@keyframes cm-think { 0%, 100% { transform: rotate(0); } 20%, 45% { transform: rotate(-4deg) translateY(-2px); } 65%, 85% { transform: rotate(3deg); } }
+@keyframes cm-look { 0%, 100% { transform: translate(0, 0); } 20% { transform: translate(-4px, -2px); } 65% { transform: translate(3px, -1px); } }
+@keyframes cm-dot { 0%, 100% { transform: translateY(0); opacity: .35; } 50% { transform: translateY(-3px); opacity: 1; } }
+@keyframes cm-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes cm-orbit { to { transform: rotate(360deg); } }
+@keyframes cm-listen { 0%, 100% { transform: rotate(4deg) translateX(2px); } 50% { transform: rotate(6deg) translate(3px, -1px); } }
+@keyframes cm-signal { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+@keyframes cm-bar { 0%, 100% { transform: scaleY(.35); } 30% { transform: scaleY(1); } 65% { transform: scaleY(.55); } }
+@keyframes cm-gesture { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-18deg); } }
+@keyframes cm-hop {
+  0%, 12%, 58%, 100% { transform: translateY(0) scale(1); }
+  18% { transform: translateY(0) scale(1.05, .9); animation-timing-function: cubic-bezier(.16, 1, .3, 1); }
+  31% { transform: translateY(-19px) scale(.96, 1.04); animation-timing-function: cubic-bezier(.55, .05, .85, .5); }
+  44% { transform: translateY(0) scale(1.07, .9); }
+  50% { transform: translateY(-3px) scale(1); }
+}
+@keyframes cm-cheer-left { 0%, 12%, 58%, 100% { transform: rotate(0); } 28%, 38% { transform: rotate(100deg); } }
+@keyframes cm-cheer-right { 0%, 12%, 58%, 100% { transform: rotate(0); } 28%, 38% { transform: rotate(-100deg); } }
+@keyframes cm-confetti { 0%, 18% { opacity: 0; transform: translate(12px, 28px) rotate(0); } 29% { opacity: 1; transform: translate(0, -8px) rotate(-30deg); } 66%, 100% { opacity: 0; transform: translate(-14px, 23px) rotate(-100deg); } }
+@keyframes cm-confetti-right { 0%, 18% { opacity: 0; transform: translate(-12px, 28px) rotate(0); } 29% { opacity: 1; transform: translate(0, -8px) rotate(30deg); } 66%, 100% { opacity: 0; transform: translate(14px, 23px) rotate(100deg); } }
+@keyframes cm-shake { 0%, 8%, 36%, 100% { transform: translateX(0); } 12%, 24% { transform: translateX(-4px); } 18%, 30% { transform: translateX(4px); } }
+@keyframes cm-sleep-breathe { 0%, 100% { transform: translateY(3px) scaleY(.96); } 50% { transform: translateY(1px) scaleY(1); } }
+@keyframes cm-drift { 0%, 100% { transform: translate(0, 3px); opacity: .35; } 50% { transform: translate(2px, -5px); opacity: 1; } }
+@keyframes cm-wave { 0%, 16%, 72%, 100% { transform: translateY(-28px); } 25%, 43%, 61% { transform: translate(3px, -28px) rotate(10deg); } 34%, 52% { transform: translate(-2px, -28px) rotate(-7deg); } }
+@keyframes cm-friendly { 0%, 100% { transform: rotate(0); } 20%, 70% { transform: rotate(-3deg); } }
+@keyframes cm-walk-body { 0%, 50%, 100% { transform: skewX(-2deg); } 25%, 75% { transform: translateY(-1.5px) skewX(-1deg); } }
+@keyframes cm-walk-arm { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes cm-stride {
+  0%, 100% { transform: rotate(-12deg) scaleY(1.04); }
+  55% { transform: rotate(12deg) scaleY(1.04); }
+  68% { transform: rotate(9deg) scaleY(.78); animation-timing-function: ease-in-out; }
+  84% { transform: rotate(-5deg) scaleY(.72); animation-timing-function: cubic-bezier(.4, 0, 1, 1); }
+}
+@keyframes cm-idle-curious { 0%, 12%, 82%, 100% { transform: skewX(0); } 22%, 35% { transform: skewX(3deg); } 53%, 66% { transform: skewX(-3deg); } }
+@keyframes cm-idle-glance { 0%, 14%, 82%, 100% { transform: translateX(0); } 23%, 36% { transform: translateX(-4px); } 54%, 67% { transform: translateX(4px); } }
+@keyframes cm-idle-sway { 0%, 100% { transform: skewX(0) scaleY(1); } 25% { transform: skewX(3deg) scaleY(1.015); } 50% { transform: skewX(0) scaleY(1); } 75% { transform: skewX(-3deg) scaleY(1.015); } }
+@keyframes cm-idle-stretch { 0%, 14%, 58%, 100% { transform: scaleY(1); } 28%, 40% { transform: scaleY(1.09); } 49% { transform: scaleY(.985); } }
+@keyframes cm-idle-stretch-left { 0%, 14%, 56%, 100% { transform: rotate(0); } 28%, 40% { transform: rotate(35deg); } }
+@keyframes cm-idle-stretch-right { 0%, 14%, 56%, 100% { transform: rotate(0); } 28%, 40% { transform: rotate(-35deg); } }
+@keyframes cm-idle-squint { 0%, 19%, 48%, 76%, 80%, 100% { transform: scaleY(1); } 28%, 40% { transform: scaleY(.3); } 77%, 79% { transform: scaleY(.12); } }
+@media (prefers-reduced-motion: reduce) { .cm-root[data-state] * { animation: none !important; } .cm-root .cm-confetti { display: none; } }
+</style>
+
+<g class="cm-actor" fill="var(--cm-color, #DD775B)">
+  <svg class="cm-legs" x="0" y="0" width="200" height="150" viewBox="0 0 200 150" overflow="hidden" aria-hidden="true">
+    <g class="cm-leg cm-leg-a"><rect x="57" y="112" width="11" height="38"/></g>
+    <g class="cm-leg cm-leg-b"><rect x="78" y="112" width="11" height="38"/></g>
+    <g class="cm-leg cm-leg-c"><rect x="110" y="112" width="11" height="38"/></g>
+    <g class="cm-leg cm-leg-d"><rect x="131" y="112" width="11" height="38"/></g>
+  </svg>
+  <g class="cm-body">
+    <rect class="cm-torso" x="57" y="64" width="85" height="65"/>
+    <g class="cm-arm cm-arm-left"><rect x="46" y="85" width="22" height="23"/></g>
+    <rect class="cm-wave-bridge" x="137" y="77" width="11" height="29"/>
+    <g class="cm-arm cm-arm-right"><rect x="131" y="85" width="22" height="23"/></g>
+    <g class="cm-gaze" fill="var(--cm-eye, #171410)">
+      <g class="cm-eye cm-eye-left"><rect x="67" y="75" width="11" height="11"/></g>
+      <g class="cm-eye cm-eye-right"><rect x="121" y="75" width="11" height="11"/></g>
+    </g>
+  </g>
+</g>
+<g class="cm-cue cm-thought" fill="var(--cm-color, #DD775B)">
+  <rect class="cm-dot cm-dot-a" x="87" y="38" width="6" height="6"/>
+  <rect class="cm-dot cm-dot-b" x="98" y="38" width="6" height="6"/>
+  <rect class="cm-dot cm-dot-c" x="109" y="38" width="6" height="6"/>
+</g>
+<g class="cm-cue cm-progress" fill="var(--cm-color, #DD775B)">
+  <g class="cm-orbit"><rect x="98" y="25" width="6" height="6"/><rect x="116" y="43" width="6" height="6" opacity=".7"/><rect x="98" y="61" width="6" height="6" opacity=".4"/><rect x="80" y="43" width="6" height="6" opacity=".2"/></g>
+</g>
+<g class="cm-cue cm-listen" fill="var(--cm-color, #DD775B)">
+  <g class="cm-signal cm-signal-a"><rect x="155" y="68" width="4" height="4"/><rect x="159" y="72" width="4" height="12"/><rect x="155" y="84" width="4" height="4"/></g>
+  <g class="cm-signal cm-signal-b"><rect x="164" y="61" width="4" height="4"/><rect x="168" y="65" width="4" height="4"/><rect x="172" y="69" width="4" height="18"/><rect x="168" y="87" width="4" height="4"/><rect x="164" y="91" width="4" height="4"/></g>
+</g>
+<g class="cm-cue cm-waveform" fill="var(--cm-color, #DD775B)">
+  <rect class="cm-bar cm-bar-a" x="78" y="29" width="5" height="18"/>
+  <rect class="cm-bar cm-bar-b" x="88" y="23" width="5" height="30"/>
+  <rect class="cm-bar cm-bar-c" x="98" y="19" width="5" height="38"/>
+  <rect class="cm-bar cm-bar-d" x="108" y="23" width="5" height="30"/>
+  <rect class="cm-bar cm-bar-e" x="118" y="29" width="5" height="18"/>
+</g>
+<g class="cm-cue cm-celebrate">
+  <g class="cm-check" fill="var(--cm-color, #DD775B)"><rect x="89" y="36" width="6" height="6"/><rect x="95" y="42" width="6" height="6"/><rect x="101" y="36" width="6" height="6"/><rect x="107" y="30" width="6" height="6"/></g>
+  <rect class="cm-confetti cm-confetti-a" x="38" y="73" width="5" height="8" fill="#3AAB7C"/>
+  <rect class="cm-confetti cm-confetti-b" x="158" y="68" width="5" height="5" fill="#DD775B"/>
+  <rect class="cm-confetti cm-confetti-c" x="53" y="51" width="5" height="5" fill="#D9A441"/>
+  <rect class="cm-confetti cm-confetti-d" x="147" y="46" width="5" height="8" fill="#3AAB7C"/>
+  <rect class="cm-confetti cm-confetti-e" x="71" y="29" width="5" height="7" fill="#DD775B"/>
+  <rect class="cm-confetti cm-confetti-f" x="127" y="25" width="7" height="5" fill="#D9A441"/>
+</g>
+<g class="cm-cue cm-alert" fill="var(--cm-color, #DD775B)"><rect x="98" y="27" width="6" height="16"/><rect x="98" y="48" width="6" height="6"/></g>
+<g class="cm-cue cm-sleep" fill="var(--cm-color, #DD775B)">
+  <g class="cm-z cm-z-a"><rect x="144" y="47" width="12" height="3"/><rect x="152" y="50" width="4" height="3"/><rect x="148" y="53" width="4" height="3"/><rect x="144" y="56" width="4" height="3"/><rect x="144" y="59" width="12" height="3"/></g>
+  <g class="cm-z cm-z-b"><rect x="164" y="24" width="16" height="4"/><rect x="176" y="28" width="4" height="4"/><rect x="172" y="32" width="4" height="4"/><rect x="168" y="36" width="4" height="4"/><rect x="164" y="40" width="16" height="4"/></g>
+</g>
+</svg>

@@ -1,0 +1,55 @@
+{
+  "source": "https://ayotomcs.me/claude-mascot",
+  "references": [
+    {
+      "name": "gym",
+      "file": "reference/gym.svg",
+      "duration": 5.625,
+      "viewBox": [
+        -20,
+        -5,
+        180,
+        140
+      ],
+      "poseCount": 30
+    },
+    {
+      "name": "confetti",
+      "file": "reference/confetti.svg",
+      "duration": 0.875,
+      "viewBox": [
+        -45,
+        -85,
+        225,
+        205
+      ],
+      "poseCount": 7
+    },
+    {
+      "name": "flag",
+      "file": "reference/flag.svg",
+      "duration": 0.63,
+      "viewBox": [
+        -25,
+        -10,
+        175,
+        160
+      ],
+      "poseCount": 9
+    },
+    {
+      "name": "walking",
+      "file": "reference/walking.svg",
+      "duration": 11.51,
+      "viewBox": [
+        -20,
+        -110,
+        936.7619047619047,
+        205
+      ],
+      "poseCount": 348
+    }
+  ],
+  "walkingSampleRate": 60,
+  "flagExport": "Original raising sequence followed by the raised flag loop."
+}
