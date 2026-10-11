@@ -18,7 +18,8 @@ export type MascotState =
   | 'using-tool-fluid' | 'directing-helpers-fluid' | 'done-fluid'
   | 'running-commands-fluid' | 'searching-web-fluid' | 'searching-code-fluid'
   | 'committing-fluid' | 'waiting-for-you-fluid' | 'error-fluid' | 'compacting-fluid'
-  | 'context-nearly-full-fluid' | 'plan-progress-fluid' | 'server-running-fluid' | 'typing-fluid';
+  | 'context-nearly-full-fluid' | 'plan-progress-fluid' | 'server-running-fluid' | 'typing-fluid'
+  | 'gag-hallucinate' | 'gag-tokens' | 'gag-context' | 'gag-prompt' | 'gag-robot' | 'gag-nap';
 
 export const MASCOT_STATES = artwork.states.map(({ name, title, description }) => ({
   name: name as MascotState, title, description,

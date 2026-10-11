@@ -1023,6 +1023,138 @@
       "poseCount": 7,
       "frameCount": 24,
       "file": "walking-fluid.svg"
+    },
+    {
+      "number": 53,
+      "name": "gag-hallucinate",
+      "title": "Hallucinating",
+      "label": "Hallucinating",
+      "description": "Stares skyward as a wobbly question mark and rainbow pixel squiggles rise, then nods with confidence.",
+      "duration": 3.76,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 9,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 21,
+      "frameCount": 24,
+      "file": "gag-hallucinate.svg"
+    },
+    {
+      "number": 54,
+      "name": "gag-tokens",
+      "title": "Counting tokens",
+      "label": "Counting tokens",
+      "description": "Counts falling pixel coins as the jar fills, then watches coins spill over its rim.",
+      "duration": 5.1,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 44,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 46,
+      "frameCount": 47,
+      "file": "gag-tokens.svg"
+    },
+    {
+      "number": 55,
+      "name": "gag-context",
+      "title": "Context feeling full",
+      "label": "Context feeling full",
+      "description": "Watches a memory bar fill, puffs out in coarse block poses, then returns to the original size.",
+      "duration": 3.72,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 13,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 17,
+      "frameCount": 19,
+      "file": "gag-context.svg"
+    },
+    {
+      "number": 56,
+      "name": "gag-prompt",
+      "title": "Air prompt",
+      "label": "Air prompt",
+      "description": "Types glowing pixel code in the air, then waits beneath an animated ellipsis.",
+      "duration": 4.04,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 20,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 23,
+      "frameCount": 27,
+      "file": "gag-prompt.svg"
+    },
+    {
+      "number": 57,
+      "name": "gag-robot",
+      "title": "Fellow AI",
+      "label": "Fellow AI",
+      "description": "A little block robot walks in, exchanges waves, then heads back out.",
+      "duration": 5.09,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 18,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 30,
+      "frameCount": 39,
+      "file": "gag-robot.svg"
+    },
+    {
+      "number": 58,
+      "name": "gag-nap",
+      "title": "Training nap",
+      "label": "Training nap",
+      "description": "Sleeps beneath a pixel training progress bar, then wakes up and stretches as it finishes.",
+      "duration": 4.82,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 12,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 29,
+      "frameCount": 30,
+      "file": "gag-nap.svg"
     }
   ]
 }

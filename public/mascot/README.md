@@ -1,4 +1,4 @@
-# Claude pixel mascot / 52 animations
+# Claude pixel mascot / 58 animations
 
 This pack contains one transparent animated SVG for each requested state, plus four source-reference exports for comparison. The resting character uses the website's actual gym sprite at its original proportions. The activity poses use explicit blocks and discrete frame changes; they do not rotate or skew the character into smooth vector silhouettes.
 
@@ -130,7 +130,7 @@ See [NOTICE.md](NOTICE.md). Artwork redistribution permission remains unverified
 
 All 22 activities have an extended pixel variant, using the original actor and drawing helpers. Append `-fluid` to any base state identifier, for example `using-tool-fluid`, `done-fluid`, or `searching-web-fluid`. Use the identifier in the React `state` prop or load its matching SVG. The manifest records `collection: "fluid"`, the base activity, and `style: "original-block-pixel"`. `done-fluid` plays once for five seconds and React returns it to `idle-fluid`; its callback follows the same five-second contract as `done`. Other extended states loop. `walking-fluid` has a 0.6-second gait, with wrapper travel controlled separately.
 
-Open `fluid.html` for the original/fluid comparison, slow playback, pause, replay, and dark backgrounds. All 52 animations are in `index.html` and the asset ZIP.
+Open `fluid.html` for the original/fluid comparison, slow playback, pause, replay, and dark backgrounds. All 58 animations are in `index.html` and the asset ZIP.
 
 ## Accessory variant mapping
 
@@ -148,3 +148,18 @@ The eight variants preserve their base activity, duration, and loop behavior. `b
 | `error-propeller-cap` | `error` | propeller cap |
 
 Use variants like any other state: `<ClaudeMascot state="thinking-wizard-hat" />`.
+
+## Extended gag states
+
+Open `gags.html` for all six new stories. Speech-bubble captions are supplied by the host app.
+
+| Identifier | Visual sequence |
+| --- | --- |
+| `gag-hallucinate` | Skyward stare, wobbly question mark, rising rainbow squiggles, confident nod. |
+| `gag-tokens` | Counts falling coins into a jar, then watches it overflow. |
+| `gag-context` | A memory bar fills, the original block body puffs out, then shrinks back. |
+| `gag-prompt` | Types glowing pixel code in the air, then waits with an ellipsis. |
+| `gag-robot` | A tiny robot walks in, exchanges waves, and walks out. |
+| `gag-nap` | Sleeps with Z marks beneath a training progress bar, then wakes and stretches. |
+
+Use `<ClaudeMascot state="gag-robot" />` or load `gag-robot.svg`. These states use `collection: "gags"`, `extended: true`, and `style: "original-block-pixel"` metadata. All six loop, pause, honor speed controls, and show a static readable pose with reduced motion.

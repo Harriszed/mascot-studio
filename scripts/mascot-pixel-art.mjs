@@ -1,6 +1,7 @@
 // Authored pixel poses use explicit blocks. Reference-derived gym and walking
 // sequences preserve the measured geometry and timing from the public demo.
 import { buildFluidStates } from './mascot-fluid-art.mjs';
+import { buildGagStates } from './mascot-gag-art.mjs';
 const CORAL = '#DD775B';
 const INK = '#000000';
 const PAPER = '#FFFDF5';
@@ -217,6 +218,8 @@ export function buildStates(reference) {
     frameBox, book, pencil, list, walking: walkingFrames(reference),
     mini, terminal, glass, globe, order: stateDefinitions.map(s=>s[0]),
     titles: Object.fromEntries(stateDefinitions.map(s=>[s[0],s[1]])),
+  }), ...buildGagStates(baseStates.length + accessoryVariants.length + stateDefinitions.length + 1, {
+    draw: options => actor(reference, options), rect, shift, glyph, frameBox,
   })];
 }
 
@@ -307,7 +310,12 @@ export function compileAnimation(animation) {
     keyframes.push(`100% { opacity: ${index === last ? 1 : 0}; }`);
     css += `${selector} .cm-frame-${index} { animation: cm-${name}-${index} calc(${duration}s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, ${animation.loop ? 'infinite' : '1'}) both; }\n@keyframes cm-${name}-${index} { ${keyframes.join(' ')} }\n`;
   });
-  css += `.cm-root[data-paused="true"] .cm-frame { animation-play-state: paused !important; }\n@media (prefers-reduced-motion: reduce) { ${selector} .cm-frame { animation: none !important; } }\n`;
+  css += `.cm-root[data-paused="true"] .cm-frame { animation-play-state: paused !important; }\n`;
+  if (animation.reducedFrame !== undefined) {
+    const still = indices[animation.reducedFrame];
+    if (still === undefined) throw new Error(`Invalid reduced-motion frame for ${name}`);
+    css += `@media (prefers-reduced-motion: reduce) { ${selector} .cm-frame { animation: none !important; opacity: 0; } ${selector} .cm-frame-${still} { opacity: 1; } }\n`;
+  } else css += `@media (prefers-reduced-motion: reduce) { ${selector} .cm-frame { animation: none !important; } }\n`;
   const markup = poses.map((pose, i) => `<g class="cm-frame cm-frame-${i}">${pose}</g>`).join('\n');
   const { frames: ignored, ...metadata } = animation;
   return { ...metadata, poseCount: poses.length, frameCount: frames.length, markup, css };
