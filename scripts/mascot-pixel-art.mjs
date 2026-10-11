@@ -1,5 +1,6 @@
 // Authored pixel poses use explicit blocks. Reference-derived gym and walking
 // sequences preserve the measured geometry and timing from the public demo.
+import { buildFluidStates } from './mascot-fluid-art.mjs';
 const CORAL = '#DD775B';
 const INK = '#000000';
 const PAPER = '#FFFDF5';
@@ -79,10 +80,16 @@ function actor(reference, options = {}) {
     if (pose === 'head') return side === 'right'
       ? [rect(140 + dx, 85 + dy, 15, 20, CORAL), rect(135 + dx, 70 + dy, 20, 15, CORAL)]
       : [rect(40 + dx, 85 + dy, 15, 20, CORAL), rect(40 + dx, 70 + dy, 20, 15, CORAL)];
+    if (pose === 'half-head' || pose === 'scratch') return side === 'right'
+      ? [rect(140 + dx, (pose === 'scratch' ? 80 : 90) + dy, 15, pose === 'scratch' ? 30 : 20, CORAL), rect(135 + dx, (pose === 'scratch' ? 65 : 80) + dy, 20, 15, CORAL)]
+      : [rect(40 + dx, (pose === 'scratch' ? 80 : 90) + dy, 15, pose === 'scratch' ? 30 : 20, CORAL), rect(40 + dx, (pose === 'scratch' ? 65 : 80) + dy, 20, 15, CORAL)];
+    if (pose === 'half-wave') return side === 'right'
+      ? [rect(140 + dx, 90 + dy, 15, 25, CORAL), rect(150 + dx, 80 + dy, 20, 20, CORAL)]
+      : [rect(40 + dx, 90 + dy, 15, 25, CORAL), rect(25 + dx, 80 + dy, 20, 20, CORAL)];
     // The raised forearm is a staircase of blocks, rather than a rotated rect.
     return side === 'right'
-      ? [rect(140 + dx, 85 + dy, 10, 25, CORAL), rect(145 + dx, 70 + dy, 10, 20, CORAL), rect(145 + dx + (pose === 'wave-out' ? 5 : 0), 55 + dy, 20, 20, CORAL)]
-      : [rect(45 + dx, 85 + dy, 10, 25, CORAL), rect(40 + dx, 70 + dy, 10, 20, CORAL), rect(30 + dx, 55 + dy, 20, 20, CORAL)];
+      ? [rect(140 + dx, 85 + dy, 10, 25, CORAL), rect(145 + dx, 70 + dy, 10, 20, CORAL), rect(145 + dx + (pose === 'wave-out' ? 5 : pose === 'wave-in' ? -5 : 0), 55 + dy, 20, 20, CORAL)]
+      : [rect(45 + dx, 85 + dy, 10, 25, CORAL), rect(40 + dx, 70 + dy, 10, 20, CORAL), rect(30 + dx + (pose === 'wave-out' ? -5 : pose === 'wave-in' ? 5 : 0), 55 + dy, 20, 20, CORAL)];
   };
   let eyeShapes;
   const ex = dx + gazeX, ey = dy + gazeY;
@@ -205,6 +212,11 @@ export function buildStates(reference) {
       description: `${base.description} Wearing ${accessory.replaceAll('-', ' ')}.`,
       frames: base.frames.map(frame => ({ ...frame, shapes: [...frame.shapes, ...accessoryShapes(frame.shapes, accessory)] })),
     };
+  }), ...buildFluidStates(baseStates.length + accessoryVariants.length + 1, {
+    draw: options => actor(reference, options), rect, shift, glyph, check,
+    frameBox, book, pencil, list, walking: walkingFrames(reference),
+    mini, terminal, glass, globe, order: stateDefinitions.map(s=>s[0]),
+    titles: Object.fromEntries(stateDefinitions.map(s=>[s[0],s[1]])),
   })];
 }
 

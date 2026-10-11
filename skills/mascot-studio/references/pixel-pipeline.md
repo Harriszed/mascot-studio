@@ -7,6 +7,9 @@ These details describe the supplied code layout. Check the current files before 
 | Path | Role |
 | --- | --- |
 | `scripts/mascot-pixel-art.mjs` | Editable state registry, drawing helpers, pose builders, SVG/CSS compiler. |
+| `scripts/mascot-fluid-art.mjs` | Original block actor helpers and weighted storyboards for all 22 extended pixel activities. |
+| `scripts/mascot-extended-activities.mjs` | Additional original-style tool, search, completion, and status storyboards. |
+| `scripts/build-fluid-preview.mjs` | Original/fluid comparison with slow playback and canvas controls. |
 | `src/components/claude-mascot/reference-artwork.json` | Measured source frames, timings, and original geometry. Retain for comparison. |
 | `src/components/claude-mascot/ClaudeMascot.tsx` | React API, supported `MascotState` union, runtime playback, and done-to-idle timer. |
 | `scripts/build-claude-mascot.mjs` | Compiles states and original reference exports. |
@@ -34,7 +37,7 @@ For a new activity, add its registry entry and builder, then extend `MascotState
 
 For an accessory shared across activities, compose it with base frames using a reusable helper and per-frame attachment anchors. Add stable named variants to the compiled collection so downloads, manifest entries, and preview selection agree. Preserve base frame times and loop behavior. If variants are kept in a separate collection instead, wire that collection into the generator, preview, component, and ZIP; exporting an isolated SVG is not a complete variant workflow.
 
-The current builder and component special-case the exact name `done`. A `done` accessory variant therefore needs explicit inherited completion metadata and runtime handling, or another deliberate API that retains the five-second done-to-idle contract. Copying it under a new name without updating that behavior is insufficient. `loop` should be inherited from the base state rather than inferred solely from the new variant's name.
+The current builder and component handle `done` and `done-fluid`. A `done` accessory variant therefore needs explicit completion runtime handling, or another deliberate API that retains the five-second done-to-idle contract. Copying it under a new name without updating that behavior is insufficient. `loop` should be inherited from the base state rather than inferred solely from the new variant's name.
 
 ## Behaviors to preserve when extending the base collection
 

@@ -1,0 +1,31 @@
+name: Publish release downloads
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run release
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const tag = context.ref.replace('refs/tags/', '');
+            const body = fs.readFileSync('sharing/RELEASE.md', 'utf8');
+            const release = await github.rest.repos.createRelease({
+              ...context.repo, tag_name: tag, name: `${tag} — Complete extended pixel collection`, body
+            });
+            for (const name of ['mascot-assets.zip', 'mascot-studio.zip', 'mascot-studio-source.zip']) {
+              const data = fs.readFileSync(`release/${name}`);
+              await github.rest.repos.uploadReleaseAsset({
+                ...context.repo, release_id: release.data.id, name, data,
+                headers: { 'content-type': 'application/zip', 'content-length': data.length }
+              });
+            }

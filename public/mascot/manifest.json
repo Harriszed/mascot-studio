@@ -561,6 +561,468 @@
       "poseCount": 3,
       "frameCount": 7,
       "file": "error-propeller-cap.svg"
+    },
+    {
+      "number": 31,
+      "name": "idle-fluid",
+      "collection": "fluid",
+      "baseState": "idle",
+      "description": "Looks left, looks right, blinks, and stretches before settling.",
+      "duration": 4.12,
+      "title": "Idle / extended pixel",
+      "label": "Idle / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 11,
+      "frameCount": 19,
+      "file": "idle-fluid.svg"
+    },
+    {
+      "number": 32,
+      "name": "thinking-fluid",
+      "collection": "fluid",
+      "baseState": "thinking",
+      "description": "A thoughtful glance, cheek scratch, then a light-bulb idea.",
+      "duration": 3.23,
+      "title": "Thinking / extended pixel",
+      "label": "Thinking / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 17,
+      "frameCount": 19,
+      "file": "thinking-fluid.svg"
+    },
+    {
+      "number": 33,
+      "name": "using-tool-fluid",
+      "collection": "fluid",
+      "baseState": "using-tool",
+      "description": "Raises a block hammer, makes three timed strikes, and inspects the finished work.",
+      "duration": 3.22,
+      "title": "Using a tool / extended pixel",
+      "label": "Using a tool / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 21,
+      "frameCount": 22,
+      "file": "using-tool-fluid.svg"
+    },
+    {
+      "number": 34,
+      "name": "directing-helpers-fluid",
+      "collection": "fluid",
+      "baseState": "directing-helpers",
+      "description": "Dispatches a task to each helper; they work, report back, and celebrate together.",
+      "duration": 2.89,
+      "title": "Directing helpers / extended pixel",
+      "label": "Directing helpers / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 16,
+      "frameCount": 17,
+      "file": "directing-helpers-fluid.svg"
+    },
+    {
+      "number": 35,
+      "name": "done-fluid",
+      "collection": "fluid",
+      "baseState": "done",
+      "description": "A blocky celebration hop and falling confetti, then a resting pose at five seconds.",
+      "duration": 5,
+      "title": "Done / extended pixel",
+      "label": "Done / extended pixel",
+      "loop": false,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 24,
+      "frameCount": 25,
+      "file": "done-fluid.svg"
+    },
+    {
+      "number": 36,
+      "name": "greeting-fluid",
+      "collection": "fluid",
+      "baseState": "greeting",
+      "description": "Anticipation, three blocky waves, a cheerful bow, and recovery.",
+      "duration": 3,
+      "title": "Waking up / greeting / extended pixel",
+      "label": "Waking up / greeting / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 14,
+      "frameCount": 23,
+      "file": "greeting-fluid.svg"
+    },
+    {
+      "number": 37,
+      "name": "asleep-fluid",
+      "collection": "fluid",
+      "baseState": "asleep",
+      "description": "A slow blocky breathing cycle, floating sleep glyphs, and a tiny sleepy face rub.",
+      "duration": 3.92,
+      "title": "Asleep / extended pixel",
+      "label": "Asleep / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 9,
+      "frameCount": 20,
+      "file": "asleep-fluid.svg"
+    },
+    {
+      "number": 38,
+      "name": "reading-fluid",
+      "collection": "fluid",
+      "baseState": "reading",
+      "description": "Scans the original book, lifts a page through seven poses, then reads on.",
+      "duration": 2.99,
+      "title": "Reading / extended pixel",
+      "label": "Reading / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 11,
+      "frameCount": 17,
+      "file": "reading-fluid.svg"
+    },
+    {
+      "number": 39,
+      "name": "writing-fluid",
+      "collection": "fluid",
+      "baseState": "writing",
+      "description": "Draws two lines with a stepped pixel pencil, admires the work, and starts a fresh sheet.",
+      "duration": 2.55,
+      "title": "Writing / editing / extended pixel",
+      "label": "Writing / editing / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 21,
+      "frameCount": 22,
+      "file": "writing-fluid.svg"
+    },
+    {
+      "number": 40,
+      "name": "running-commands-fluid",
+      "collection": "fluid",
+      "baseState": "running-commands",
+      "description": "Types a command, waits for output, and gets a successful exit.",
+      "duration": 2.51,
+      "title": "Running commands / extended pixel",
+      "label": "Running commands / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 8,
+      "frameCount": 17,
+      "file": "running-commands-fluid.svg"
+    },
+    {
+      "number": 41,
+      "name": "searching-web-fluid",
+      "collection": "fluid",
+      "baseState": "searching-web",
+      "description": "Sweeps a pixel magnifier around the globe, spots a result, and confirms the find.",
+      "duration": 2.53,
+      "title": "Searching the web / extended pixel",
+      "label": "Searching the web / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 10,
+      "frameCount": 16,
+      "file": "searching-web-fluid.svg"
+    },
+    {
+      "number": 42,
+      "name": "searching-code-fluid",
+      "collection": "fluid",
+      "baseState": "searching-code",
+      "description": "Scans the code panel with a pixel magnifier and highlights a matching result.",
+      "duration": 2.53,
+      "title": "Searching code / extended pixel",
+      "label": "Searching code / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 10,
+      "frameCount": 16,
+      "file": "searching-code-fluid.svg"
+    },
+    {
+      "number": 43,
+      "name": "testing-fluid",
+      "collection": "fluid",
+      "baseState": "testing",
+      "description": "Sends three pixel test signals, ticks each result, and celebrates a full pass.",
+      "duration": 3.69,
+      "title": "Testing / extended pixel",
+      "label": "Testing / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 23,
+      "frameCount": 24,
+      "file": "testing-fluid.svg"
+    },
+    {
+      "number": 44,
+      "name": "committing-fluid",
+      "collection": "fluid",
+      "baseState": "committing",
+      "description": "A green commit travels up the branch, pushes across, and lands with a confirmation.",
+      "duration": 2.61,
+      "title": "Committing / pushing / extended pixel",
+      "label": "Committing / pushing / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 17,
+      "frameCount": 18,
+      "file": "committing-fluid.svg"
+    },
+    {
+      "number": 45,
+      "name": "waiting-for-you-fluid",
+      "collection": "fluid",
+      "baseState": "waiting-for-you",
+      "description": "Looks toward you, gives a small questioning gesture, then waits patiently.",
+      "duration": 3.05,
+      "title": "Waiting for you / extended pixel",
+      "label": "Waiting for you / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 6,
+      "frameCount": 10,
+      "file": "waiting-for-you-fluid.svg"
+    },
+    {
+      "number": 46,
+      "name": "error-fluid",
+      "collection": "fluid",
+      "baseState": "error",
+      "description": "Reacts with a short blocky shake, checks the problem, and asks what to try next.",
+      "duration": 2.18,
+      "title": "Error / extended pixel",
+      "label": "Error / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 11,
+      "frameCount": 15,
+      "file": "error-fluid.svg"
+    },
+    {
+      "number": 47,
+      "name": "compacting-fluid",
+      "collection": "fluid",
+      "baseState": "compacting",
+      "description": "Squeezes three memory cards into one neat packet, checks it, and unfolds the next batch.",
+      "duration": 2.73,
+      "title": "Compacting / extended pixel",
+      "label": "Compacting / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 13,
+      "frameCount": 15,
+      "file": "compacting-fluid.svg"
+    },
+    {
+      "number": 48,
+      "name": "context-nearly-full-fluid",
+      "collection": "fluid",
+      "baseState": "context-nearly-full",
+      "description": "Notices the last memory slot flashing, scratches its head, and points out the warning.",
+      "duration": 2.4,
+      "title": "Context nearly full / extended pixel",
+      "label": "Context nearly full / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 10,
+      "frameCount": 12,
+      "file": "context-nearly-full-fluid.svg"
+    },
+    {
+      "number": 49,
+      "name": "plan-progress-fluid",
+      "collection": "fluid",
+      "baseState": "plan-progress",
+      "description": "Points through three checklist milestones, then proudly shows the completed plan.",
+      "duration": 3.17,
+      "title": "Plan progress / extended pixel",
+      "label": "Plan progress / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 14,
+      "frameCount": 17,
+      "file": "plan-progress-fluid.svg"
+    },
+    {
+      "number": 50,
+      "name": "server-running-fluid",
+      "collection": "fluid",
+      "baseState": "server-running",
+      "description": "Watches the server lights cycle, acknowledges a request, and returns to monitoring.",
+      "duration": 3.09,
+      "title": "Server running / extended pixel",
+      "label": "Server running / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 11,
+      "frameCount": 15,
+      "file": "server-running-fluid.svg"
+    },
+    {
+      "number": 51,
+      "name": "typing-fluid",
+      "collection": "fluid",
+      "baseState": "typing",
+      "description": "Follows the bouncing message dots, perks up at your draft, and settles back to listening.",
+      "duration": 2.89,
+      "title": "You're typing / extended pixel",
+      "label": "You're typing / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 10,
+      "frameCount": 17,
+      "file": "typing-fluid.svg"
+    },
+    {
+      "number": 52,
+      "name": "walking-fluid",
+      "collection": "fluid",
+      "baseState": "walking",
+      "description": "The measured original rectangular gait, with extra leg-height poses and a clearer stride.",
+      "duration": 0.6,
+      "title": "Walking / extended pixel",
+      "label": "Walking / extended pixel",
+      "loop": true,
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "style": "original-block-pixel",
+      "poseCount": 7,
+      "frameCount": 24,
+      "file": "walking-fluid.svg"
     }
   ]
 }

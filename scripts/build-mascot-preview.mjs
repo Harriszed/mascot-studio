@@ -27,5 +27,5 @@ document.getElementById('walk-direction').addEventListener('change',event=>{docu
 document.getElementById('walk-duration').addEventListener('change',event=>{document.getElementById('walk-lane').style.setProperty('--travel-duration',event.target.value+'s');});
 const initial=location.hash.slice(1);if(states.some(s=>s.name===initial))show(initial);else settings();
 </script></body></html>`;
-await writeFile(path.join(root, 'public/mascot/index.html'), html);
+await writeFile(path.join(root, 'public/mascot/index.html'), html.replace('<section class="studio"', '<p class="notes"><a href="fluid.html">Compare the 22 extended pixel states with the originals →</a></p><section class="studio"'));
 console.log(`Built ${states.length}-state pixel preview at /mascot/index.html`);

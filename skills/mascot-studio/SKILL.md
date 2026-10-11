@@ -23,6 +23,7 @@ Extend the mascot project the user points to. Deliver editable source, working a
 ## Create characters, activities, and accessories
 
 - Treat the chosen source as the visual and technical reference. Inspect its actual artwork and preview before drawing. Preserve its proportions, palette, drawing style, layering, and timing unless the user requests a change. For an explicitly different character, adapt those conventions to its new silhouette and maintain its identity across poses.
+- A request for smoother or more impressive animation is not a request to redesign the character. Extend the original block poses, coarse pixel steps, and action sequences first. Integer coordinates alone do not preserve pixel style: avoid replacing thick rectangular limbs with thin rasterized curves or introducing a finer drawing grid.
 - For **a new character**, use a separately named character or collection and keep the original available. Inherit only the activities and accessories requested in the brief; the existing collection's 22 states are a starting point, not a required total.
 - For **a new activity**, implement its editable pose sequence and add a stable identifier, title, description, duration, and loop behavior to the source registry. Connect it to the preview, component's supported state types, manifests, and exports.
 - For **hats, clothing, and accessories**, prefer named variants that reuse the base poses and timing. Use reusable drawing helpers or variant definitions for repeated accessory geometry. Attach each accessory to the correct head, face, hand, or torso anchor in every pose; respect occlusion and keep it inside the exported canvas. Preserve the originals unless replacement is explicitly requested.
@@ -32,6 +33,8 @@ Extend the mascot project the user points to. Deliver editable source, working a
 For this project's generator, coordinates, special states, and extension points, read [references/pixel-pipeline.md](references/pixel-pipeline.md). Read it when working on the supplied Claude Mascot layout, not as a mandate to convert other projects.
 
 ## Build, inspect, and deliver
+
+For new or improved animation sets, read [references/animation-quality.md](references/animation-quality.md). It covers pixel readability, anchored rigs, action timing, seamless loops, and comparison against the existing set. Apply interface transition rules to the preview controls; preserve deliberate sprite timing in the character itself.
 
 Use the selected project's own commands and dependencies. The Claude Mascot project uses `npm run build`, `npm run pack:assets`, and `npm run dev`; inspect its package scripts before running them.
 

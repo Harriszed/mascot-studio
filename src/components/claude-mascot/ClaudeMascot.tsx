@@ -12,7 +12,13 @@ export type MascotState =
   | 'plan-progress' | 'server-running' | 'typing' | 'walking'
   | 'idle-wizard-hat' | 'thinking-wizard-hat' | 'reading-wizard-hat'
   | 'writing-sunglasses' | 'running-commands-sunglasses' | 'greeting-crown'
-  | 'asleep-nightcap' | 'error-propeller-cap';
+  | 'asleep-nightcap' | 'error-propeller-cap'
+  | 'idle-fluid' | 'thinking-fluid' | 'greeting-fluid' | 'reading-fluid'
+  | 'writing-fluid' | 'testing-fluid' | 'asleep-fluid' | 'walking-fluid'
+  | 'using-tool-fluid' | 'directing-helpers-fluid' | 'done-fluid'
+  | 'running-commands-fluid' | 'searching-web-fluid' | 'searching-code-fluid'
+  | 'committing-fluid' | 'waiting-for-you-fluid' | 'error-fluid' | 'compacting-fluid'
+  | 'context-nearly-full-fluid' | 'plan-progress-fluid' | 'server-running-fluid' | 'typing-fluid';
 
 export const MASCOT_STATES = artwork.states.map(({ name, title, description }) => ({
   name: name as MascotState, title, description,
@@ -57,6 +63,8 @@ function SpriteMascot({
 }
 
 function DonePlayback(props: ClaudeMascotProps) {
+  const doneState = props.state === 'done-fluid' ? 'done-fluid' : 'done';
+  const idleState = doneState === 'done-fluid' ? 'idle-fluid' : 'idle';
   const [finished, setFinished] = useState(false);
   const callback = useRef(props.onDoneComplete);
   useEffect(() => { callback.current = props.onDoneComplete; }, [props.onDoneComplete]);
@@ -64,11 +72,12 @@ function DonePlayback(props: ClaudeMascotProps) {
     const timer = window.setTimeout(() => { setFinished(true); callback.current?.(); }, 5000);
     return () => window.clearTimeout(timer);
   }, []);
-  return <SpriteMascot {...props} state={finished ? 'idle' : 'done'} loop={finished ? props.loop : false}
+  return <SpriteMascot {...props} state={finished ? idleState : doneState} loop={finished ? props.loop : false}
     label={finished ? undefined : props.label} />;
 }
 
 /** Base states and accessory variants. The host app supplies activity signals. */
 export default function ClaudeMascot(props: ClaudeMascotProps) {
-  return props.state === 'done' ? <DonePlayback {...props} /> : <SpriteMascot {...props} />;
+  return props.state === 'done' || props.state === 'done-fluid'
+    ? <DonePlayback key={props.state} {...props} /> : <SpriteMascot {...props} />;
 }
