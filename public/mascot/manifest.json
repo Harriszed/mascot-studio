@@ -1161,8 +1161,8 @@
       "name": "gag-coffee",
       "title": "Coffee break",
       "label": "Coffee break",
-      "description": "Raises a steaming block mug, takes a long satisfied sip, then lowers it for the next coffee break.",
-      "duration": 4.28,
+      "description": "Stirs a steaming mug on a little table, watches the steam rise, then relaxes with a satisfied bounce.",
+      "duration": 5.45,
       "loop": true,
       "collection": "gags",
       "extended": true,
@@ -1174,8 +1174,8 @@
         240,
         220
       ],
-      "poseCount": 20,
-      "frameCount": 24,
+      "poseCount": 18,
+      "frameCount": 31,
       "file": "gag-coffee.svg"
     },
     {

@@ -161,7 +161,7 @@ Open `gags.html` for all ten new stories. Speech-bubble captions are supplied by
 | `gag-prompt` | Types glowing pixel code in the air, then waits with an ellipsis. |
 | `gag-robot` | A tiny robot walks in, exchanges waves, and walks out. |
 | `gag-nap` | Sleeps with Z marks beneath a training progress bar, then wakes and stretches. |
-| `gag-coffee` | Raises a steaming mug, enjoys a long sip, then lowers it. |
+| `gag-coffee` | Stirs a steaming mug on a little table, watches the steam, then relaxes. |
 | `gag-dance` | Headphones, alternating steps, hops and bouncing musical notes. |
 | `gag-buffering` | An eight-step spinner rotates while the mascot waits and checks its head. |
 | `gag-deploy` | Ignites a rocket and waves as it launches through a pixel trail. |

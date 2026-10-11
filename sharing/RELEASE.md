@@ -1,10 +1,3 @@
-Four new extended pixel gag animations, built from the original thick block actor. The full collection now has 62 animations, including ten gags. Speech-bubble captions stay in the host app.
+Improved `gag-coffee` with a new extended coffee-break scene. The mug stays on a small table beside the mascot: he stirs it, watches the pixel steam rise, then relaxes with a satisfied bounce. The cup remains clear of the face throughout the loop.
 
-- `gag-coffee`: raises a steaming mug, takes a long sip, then lowers it.
-- `gag-dance`: headphone dance with alternating steps, hops and bouncing notes.
-- `gag-buffering`: an eight-step spinner and a patient head check.
-- `gag-deploy`: rocket ignition, launch, exhaust trail and a farewell wave.
-
-Each includes timed key poses, loop recovery, transparent SVG, React state identifier, pause/speed controls and a readable reduced-motion pose. The updated sharing GIF shows all ten gags over two pages.
-
-Downloads: asset pack, portable creation skill, and complete source. Attribution and reuse status remain in NOTICE.md.
+Original block artwork, speech-caption omission, React state ID, pause/speed controls, transparent SVG and reduced-motion support are preserved. The other 61 animations are unchanged. Updated GIF and all three release ZIPs included. Attribution and reuse status remain in NOTICE.md.

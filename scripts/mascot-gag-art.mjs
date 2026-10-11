@@ -108,16 +108,28 @@ export function buildGagStates(firstNumber,{draw,rect,shift,glyph,frameBox}) {
   story('gag-nap','Training nap','Sleeps beneath a pixel training progress bar, then wakes up and stretches as it finishes.',nap);
 
 
-  // The cup travels in coarse steps; the raised original hand stays behind it.
-  const mug=(x,y,steam=0)=>[rect(x+20,y+5,10,15,INK),rect(x+25,y+10,5,5,PAPER),
-    rect(x,y,25,25,INK),rect(x+5,y+5,15,15,PAPER),rect(x+5,y,15,5,'#704B32'),
-    ...Array.from({length:2},(_,i)=>[rect(x+5+i*10,y-10-steam*5,5,5,GOLD),rect(x+10+i*10,y-20-steam*5,5,5,GOLD)]).flat()];
-  const coffee=[[450,{gazeX:5},mug(155,105)]];
-  for(let i=0;i<6;i++)coffee.push([120,{right:i<3?'point':'half-wave',gazeX:5},mug(155-i*5,105-i*5,i%2)]);
-  for(let i=0;i<8;i++)coffee.push([180,{right:'half-wave',eyes:i%4===0?'open':'closed',gazeX:5},mug(125,80,i%3)]);
-  for(let i=1;i<=6;i++)coffee.push([120,{right:i<4?'half-wave':'point',eyes:'happy'},mug(125+i*5,80+i*5,i%2)]);
-  coffee.push([350,{eyes:'happy'},mug(155,105)],[150,{eyes:'closed'},mug(155,105)],[450,{gazeX:5},mug(155,105)]);
-  story('gag-coffee','Coffee break','Raises a steaming block mug, takes a long satisfied sip, then lowers it for the next coffee break.',coffee);
+  // A tabletop coffee ritual keeps the cup clear of the original eyes.
+  const coffeeTable=()=>[rect(155,150,55,5,INK),rect(160,155,5,15,INK),rect(200,155,5,15,INK)];
+  const mug=()=>[rect(190,125,10,15,INK),rect(195,130,5,5,PAPER),
+    rect(165,120,25,30,INK),rect(170,125,15,20,PAPER),rect(170,120,15,5,'#704B32')];
+  const steam=phase=>Array.from({length:2},(_,i)=>[rect(170+i*10,110-phase*5,5,5,GOLD),
+    rect(175+i*10,100-phase*5,5,5,GOLD)]).flat();
+  const coffeeScene=(phase=0)=>[...coffeeTable(),...mug(),...steam(phase)];
+  const spoon=x=>[rect(x,100,5,30,'#70685D'),rect(x-5,125,10,5,'#70685D'),
+    // The broad grip connects the original pointing hand to the stirrer.
+    rect(165,95,x-160,10,CORAL)];
+  const coffee=[[450,{gazeX:5,gazeY:5},coffeeScene()]];
+  coffee.push([200,{right:'point',gazeX:5,gazeY:5},coffeeScene(1)],
+    [180,{right:'point',gazeX:5,gazeY:5},[...coffeeScene(2),...spoon(170)]]);
+  for(let i=0;i<16;i++)coffee.push([130,{right:'point',gazeX:5,gazeY:5},
+    [...coffeeScene(i%3),...spoon(170+[0,5,10,5][i%4])]]);
+  coffee.push([200,{right:'point',gazeX:5,gazeY:5},[...coffeeScene(1),...spoon(170)]],
+    [180,{right:'point',gazeX:5},coffeeScene(2)],
+    [200,{eyes:'closed'},coffeeScene(0)]);
+  for(let i=0;i<6;i++)coffee.push([160,{eyes:'happy',dy:i===2?-5:0},coffeeScene(i%3)]);
+  coffee.push([400,{eyes:'happy'},coffeeScene(1)],[150,{eyes:'closed'},coffeeScene(2)],
+    [450,{gazeX:5,gazeY:5},coffeeScene()]);
+  story('gag-coffee','Coffee break','Stirs a steaming mug on a little table, watches the steam rise, then relaxes with a satisfied bounce.',coffee);
 
   const headphones=(dx=0,dy=0)=>shift([rect(50,60,95,5,INK),rect(45,65,10,30,INK),rect(140,65,10,30,INK),
     rect(45,80,10,25,PURPLE),rect(140,80,10,25,PURPLE),rect(50,55,95,5,PURPLE)],dx,dy);
