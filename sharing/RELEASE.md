@@ -1,16 +1,10 @@
-Six new extended pixel gag animations, built from the original thick block actor. The full collection now has 58 animations. Speech-bubble captions stay in the host app.
+Four new extended pixel gag animations, built from the original thick block actor. The full collection now has 62 animations, including ten gags. Speech-bubble captions stay in the host app.
 
-- `gag-hallucinate`: a skyward stare, wobbly question mark, rising rainbow squiggles, then a confident nod.
-- `gag-tokens`: falling coins are counted into a jar until it overflows.
-- `gag-context`: a filling memory bar triggers coarse block puffing and a return to the original size.
-- `gag-prompt`: glowing pixel code is typed in the air, followed by a waiting ellipsis.
-- `gag-robot`: a tiny robot arrives, exchanges waves, and walks out.
-- `gag-nap`: a training progress bar fills during a nap, then the mascot wakes and stretches.
+- `gag-coffee`: raises a steaming mug, takes a long sip, then lowers it.
+- `gag-dance`: headphone dance with alternating steps, hops and bouncing notes.
+- `gag-buffering`: an eight-step spinner and a patient head check.
+- `gag-deploy`: rocket ignition, launch, exhaust trail and a farewell wave.
 
-[New gag gallery](https://harriszed.github.io/mascot-studio/mascot/gags.html) ? [Full playground](https://harriszed.github.io/mascot-studio/mascot/)
+Each includes timed key poses, loop recovery, transparent SVG, React state identifier, pause/speed controls and a readable reduced-motion pose. The updated sharing GIF shows all ten gags over two pages.
 
-Downloads: `mascot-assets.zip` for all animations and previews, `mascot-studio.zip` for the portable skill, and `mascot-studio-source.zip` for editable source, React integration, skill, and showcase GIFs.
-
-Original and existing extended animations are preserved. Source, bounds, playback, pause/replay, reduced motion, and archive checks passed.
-
-Unofficial community project. Claude character: Anthropic. Original reference: Ayotomiwa Wale-Durojaye. See NOTICE.md for attribution and reuse status.
+Downloads: asset pack, portable creation skill, and complete source. Attribution and reuse status remain in NOTICE.md.

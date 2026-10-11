@@ -9,8 +9,8 @@ These details describe the supplied code layout. Check the current files before 
 | `scripts/mascot-pixel-art.mjs` | Editable state registry, drawing helpers, pose builders, SVG/CSS compiler. |
 | `scripts/mascot-fluid-art.mjs` | Original block actor helpers and weighted storyboards for all 22 extended pixel activities. |
 | `scripts/mascot-extended-activities.mjs` | Additional original-style tool, search, completion, and status storyboards. |
-| `scripts/mascot-gag-art.mjs` | Six extended gag storyboards using the original actor; speech captions stay in the host. |
-| `scripts/build-gag-preview.mjs` | Dedicated six-gag gallery, canvas controls, and downloads. |
+| `scripts/mascot-gag-art.mjs` | Ten extended gag storyboards using the original actor; speech captions stay in the host. |
+| `scripts/build-gag-preview.mjs` | Dedicated ten-gag gallery, canvas controls, and downloads. |
 | `scripts/build-fluid-preview.mjs` | Original/fluid comparison with slow playback and canvas controls. |
 | `src/components/claude-mascot/reference-artwork.json` | Measured source frames, timings, and original geometry. Retain for comparison. |
 | `src/components/claude-mascot/ClaudeMascot.tsx` | React API, supported `MascotState` union, runtime playback, and done-to-idle timer. |
@@ -56,4 +56,4 @@ Run the build before packaging. The pack currently includes all top-level state 
 
 ## Gag collection
 
-`scripts/mascot-gag-art.mjs` supplies six `gag-*` states, already authored as extended stories rather than base/variant pairs. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.
+`scripts/mascot-gag-art.mjs` supplies ten `gag-*` states, already authored as extended stories rather than base/variant pairs. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.

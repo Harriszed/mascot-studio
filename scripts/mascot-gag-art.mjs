@@ -1,4 +1,4 @@
-// Six extended visual jokes, drawn with the original actor and coarse blocks.
+// Ten extended visual jokes, drawn with the original actor and coarse blocks.
 // Speech-bubble captions belong to the host app and are intentionally absent.
 const CORAL='#DD775B', INK='#000000', PAPER='#FFFDF5', GOLD='#D9A441', GREEN='#3AAB7C';
 const BLUE='#337FB7', PURPLE='#6943AD';
@@ -22,7 +22,7 @@ export function buildGagStates(firstNumber,{draw,rect,shift,glyph,frameBox}) {
     });
     states.push({number:firstNumber+states.length,name,title,label:title,description,
       duration:elapsed/1000,frames,loop:true,collection:'gags',extended:true,
-      reducedFrame:{'gag-hallucinate':9,'gag-tokens':poses.length-3,'gag-context':13,'gag-prompt':20,'gag-robot':18,'gag-nap':12}[name],
+      reducedFrame:{'gag-hallucinate':9,'gag-tokens':poses.length-3,'gag-context':13,'gag-prompt':20,'gag-robot':18,'gag-nap':12,'gag-coffee':9,'gag-dance':10,'gag-buffering':12,'gag-deploy':15}[name],
       style:'original-block-pixel',viewBox:[-20,-40,240,220]});
   }
   const squiggle=(x,y,phase,color)=>Array.from({length:6},(_,j)=>rect(x+j*5,y+([0,5,10,5,0,-5][(j+phase)%6]),5,5,color));
@@ -106,6 +106,55 @@ export function buildGagStates(firstNumber,{draw,rect,shift,glyph,frameBox}) {
     [120,{left:'point',right:'point',eyes:'happy'},training(0)],
     [400,{},training(0)]);
   story('gag-nap','Training nap','Sleeps beneath a pixel training progress bar, then wakes up and stretches as it finishes.',nap);
+
+
+  // The cup travels in coarse steps; the raised original hand stays behind it.
+  const mug=(x,y,steam=0)=>[rect(x+20,y+5,10,15,INK),rect(x+25,y+10,5,5,PAPER),
+    rect(x,y,25,25,INK),rect(x+5,y+5,15,15,PAPER),rect(x+5,y,15,5,'#704B32'),
+    ...Array.from({length:2},(_,i)=>[rect(x+5+i*10,y-10-steam*5,5,5,GOLD),rect(x+10+i*10,y-20-steam*5,5,5,GOLD)]).flat()];
+  const coffee=[[450,{gazeX:5},mug(155,105)]];
+  for(let i=0;i<6;i++)coffee.push([120,{right:i<3?'point':'half-wave',gazeX:5},mug(155-i*5,105-i*5,i%2)]);
+  for(let i=0;i<8;i++)coffee.push([180,{right:'half-wave',eyes:i%4===0?'open':'closed',gazeX:5},mug(125,80,i%3)]);
+  for(let i=1;i<=6;i++)coffee.push([120,{right:i<4?'half-wave':'point',eyes:'happy'},mug(125+i*5,80+i*5,i%2)]);
+  coffee.push([350,{eyes:'happy'},mug(155,105)],[150,{eyes:'closed'},mug(155,105)],[450,{gazeX:5},mug(155,105)]);
+  story('gag-coffee','Coffee break','Raises a steaming block mug, takes a long satisfied sip, then lowers it for the next coffee break.',coffee);
+
+  const headphones=(dx=0,dy=0)=>shift([rect(50,60,95,5,INK),rect(45,65,10,30,INK),rect(140,65,10,30,INK),
+    rect(45,80,10,25,PURPLE),rect(140,80,10,25,PURPLE),rect(50,55,95,5,PURPLE)],dx,dy);
+  const note=(x,y)=>[rect(x+5,y,5,20,BLUE),rect(x+10,y,10,5,BLUE),rect(x,y+15,10,10,BLUE)];
+  const dance=[[350,{},headphones()]];
+  for(let beat=0;beat<6;beat++)for(let step=0;step<4;step++){
+    const dx=(beat%2?1:-1)*[0,5,10,5][step],dy=step===2?-5:0;
+    dance.push([140,{dx,dy,eyes:'happy',left:beat%2?'wave-out':'point',right:beat%2?'point':'wave-out'},
+      [...headphones(dx,dy),...note(10+(beat%2)*5,40-step*5),...note(170,25+(step%2)*10)]]);
+  }
+  dance.push([200,{left:'half-wave',right:'half-wave',eyes:'happy'},headphones()],
+    [250,{eyes:'happy'},headphones()],[150,{eyes:'closed'},headphones()],[350,{},headphones()]);
+  story('gag-dance','Headphone dance','Headphones on: alternating block side steps, little hops, raised arms and bouncing pixel notes.',dance);
+
+  const spinner=phase=>[[0,-15],[10,-10],[15,0],[10,10],[0,15],[-10,10],[-15,0],[-10,-10]].map(([x,y],i)=>
+    rect(95+x,25+y,5,5,(phase+8-i)%8===0?PURPLE:(phase+8-i)%8<3?CORAL:'#D6CCBC'));
+  const buffering=[[400,{gazeY:-5},spinner(0)]];
+  for(let tick=0;tick<32;tick++)buffering.push([120,{gazeY:-5,gazeX:tick<16?-5:5,
+    right:tick>=12&&tick<20?'half-head':'rest',eyes:tick===10||tick===26?'closed':'open'},spinner(tick%8)]);
+  buffering.push([250,{right:'head',gazeY:-5},spinner(0)],[150,{right:'half-head',eyes:'closed'},spinner(0)],
+    [400,{gazeY:-5},spinner(0)]);
+  story('gag-buffering','Buffering','A chunky eight-step spinner circles overhead while the mascot glances up, blinks and checks its head.',buffering);
+
+  const pad=()=>[rect(155,150,50,5,INK),rect(160,155,5,10,INK),rect(195,155,5,10,INK)];
+  const rocket=(y,flame=0)=>[rect(175,y,5,5,CORAL),rect(170,y+5,15,5,CORAL),rect(165,y+10,25,35,PAPER),
+    rect(165,y+10,5,35,INK),rect(185,y+10,5,35,INK),rect(170,y+20,15,10,BLUE),
+    rect(160,y+35,5,15,CORAL),rect(190,y+35,5,15,CORAL),rect(170,y+45,15,5,INK),
+    ...(flame?[rect(170,y+50,15,flame*5,GOLD),rect(175,y+50,5,(flame+1)*5,CORAL)]:[])];
+  const deploy=[[450,{gazeX:5},[...pad(),...rocket(100)]]];
+  for(let i=0;i<8;i++)deploy.push([130,{right:i<4?'point':'half-wave',gazeX:5},
+    [...pad(),...rocket(100-(i%2)*5,1+i%3),rect(150-i%3*5,145,5,5,GOLD)]]);
+  for(let i=1;i<=16;i++)deploy.push([100,{right:'wave',gazeX:5,gazeY:-5,eyes:i>10?'happy':'open'},
+    [...pad(),...rocket(100-i*10,2+i%3),...Array.from({length:Math.min(6,i)},(_,j)=>rect(175+(j%2)*5,150-j*15,5,5,GOLD))]]);
+  deploy.push([450,{right:'wave',eyes:'happy'},pad()],[150,{right:'half-wave',eyes:'happy'},pad()],
+    [200,{right:'point',eyes:'happy'},pad()],[120,{eyes:'closed'},pad()],
+    [150,{gazeX:5},[...pad(),...rocket(100)]],[450,{gazeX:5},[...pad(),...rocket(100)]]);
+  story('gag-deploy','Deploy launch','Prepares a block rocket, watches ignition flicker, then waves as it launches through a pixel exhaust trail.',deploy);
 
   // Edge-entering props are clipped as rectangles, preserving transparent bounds.
   return states.map(state=>({...state,frames:state.frames.map(frame=>({...frame,shapes:frame.shapes.flatMap(s=>{

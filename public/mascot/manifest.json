@@ -1155,6 +1155,94 @@
       "poseCount": 29,
       "frameCount": 30,
       "file": "gag-nap.svg"
+    },
+    {
+      "number": 59,
+      "name": "gag-coffee",
+      "title": "Coffee break",
+      "label": "Coffee break",
+      "description": "Raises a steaming block mug, takes a long satisfied sip, then lowers it for the next coffee break.",
+      "duration": 4.28,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 9,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 20,
+      "frameCount": 24,
+      "file": "gag-coffee.svg"
+    },
+    {
+      "number": 60,
+      "name": "gag-dance",
+      "title": "Headphone dance",
+      "label": "Headphone dance",
+      "description": "Headphones on: alternating block side steps, little hops, raised arms and bouncing pixel notes.",
+      "duration": 4.66,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 10,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 12,
+      "frameCount": 29,
+      "file": "gag-dance.svg"
+    },
+    {
+      "number": 61,
+      "name": "gag-buffering",
+      "title": "Buffering",
+      "label": "Buffering",
+      "description": "A chunky eight-step spinner circles overhead while the mascot glances up, blinks and checks its head.",
+      "duration": 5.04,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 12,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 28,
+      "frameCount": 36,
+      "file": "gag-buffering.svg"
+    },
+    {
+      "number": 62,
+      "name": "gag-deploy",
+      "title": "Deploy launch",
+      "label": "Deploy launch",
+      "description": "Prepares a block rocket, watches ignition flicker, then waves as it launches through a pixel exhaust trail.",
+      "duration": 4.61,
+      "loop": true,
+      "collection": "gags",
+      "extended": true,
+      "reducedFrame": 15,
+      "style": "original-block-pixel",
+      "viewBox": [
+        -20,
+        -40,
+        240,
+        220
+      ],
+      "poseCount": 29,
+      "frameCount": 31,
+      "file": "gag-deploy.svg"
     }
   ]
 }
