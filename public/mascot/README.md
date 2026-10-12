@@ -158,7 +158,7 @@ Open `gags.html` for all ten new stories. Speech-bubble captions are supplied by
 | `gag-hallucinate` | Skyward stare, wobbly question mark, rising rainbow squiggles, confident nod. |
 | `gag-tokens` | Counts falling coins into a jar, then watches it overflow. |
 | `gag-context` | A memory bar fills, the original block body puffs out, then shrinks back. |
-| `gag-prompt` | Types glowing pixel code in the air, then waits with an ellipsis. |
+| `gag-prompt` | Studies steady dots, scratches its head, then pauses with a small idea. |
 | `gag-robot` | A tiny robot walks in, exchanges waves, and walks out. |
 | `gag-nap` | Sleeps with Z marks beneath a training progress bar, then wakes and stretches. |
 | `gag-coffee` | Stirs a steaming mug on a little table, watches the steam, then relaxes. |

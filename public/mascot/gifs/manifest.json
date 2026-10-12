@@ -666,15 +666,15 @@
     },
     {
       "name": "gag-prompt",
-      "title": "Air prompt",
+      "title": "Deep thought",
       "file": "gag-prompt.gif",
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4040,
-      "durationMs": 4040,
+      "sourceDurationMs": 6860,
+      "durationMs": 6860,
       "terminalHoldMs": 0,
-      "frameCount": 26
+      "frameCount": 17
     },
     {
       "name": "gag-robot",

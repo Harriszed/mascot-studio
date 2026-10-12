@@ -1093,14 +1093,14 @@
     {
       "number": 56,
       "name": "gag-prompt",
-      "title": "Air prompt",
-      "label": "Air prompt",
-      "description": "Types glowing pixel code in the air, then waits beneath an animated ellipsis.",
-      "duration": 4.04,
+      "title": "Deep thought",
+      "label": "Deep thought",
+      "description": "Studies three steady pixel dots, scratches its head, then pauses with a small idea before settling back.",
+      "duration": 6.86,
       "loop": true,
       "collection": "gags",
       "extended": true,
-      "reducedFrame": 20,
+      "reducedFrame": 13,
       "style": "original-block-pixel",
       "viewBox": [
         -20,
@@ -1108,8 +1108,8 @@
         240,
         220
       ],
-      "poseCount": 23,
-      "frameCount": 27,
+      "poseCount": 13,
+      "frameCount": 17,
       "file": "gag-prompt.svg"
     },
     {

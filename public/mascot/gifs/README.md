@@ -66,7 +66,7 @@ See manifest.json for each file's timing and NOTICE.md for attribution and reuse
 | `gag-hallucinate` | Hallucinating |
 | `gag-tokens` | Counting tokens |
 | `gag-context` | Context feeling full |
-| `gag-prompt` | Air prompt |
+| `gag-prompt` | Deep thought |
 | `gag-robot` | Fellow AI |
 | `gag-nap` | Training nap |
 | `gag-coffee` | Coffee break |

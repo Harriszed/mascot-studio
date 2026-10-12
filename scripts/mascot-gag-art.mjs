@@ -22,7 +22,7 @@ export function buildGagStates(firstNumber,{draw,rect,shift,glyph,frameBox}) {
     });
     states.push({number:firstNumber+states.length,name,title,label:title,description,
       duration:elapsed/1000,frames,loop:true,collection:'gags',extended:true,
-      reducedFrame:{'gag-hallucinate':9,'gag-tokens':poses.length-3,'gag-context':13,'gag-prompt':20,'gag-robot':18,'gag-nap':12,'gag-coffee':9,'gag-dance':10,'gag-buffering':12,'gag-deploy':15}[name],
+      reducedFrame:{'gag-hallucinate':9,'gag-tokens':poses.length-3,'gag-context':13,'gag-prompt':13,'gag-robot':18,'gag-nap':12,'gag-coffee':9,'gag-dance':10,'gag-buffering':12,'gag-deploy':15}[name],
       style:'original-block-pixel',viewBox:[-20,-40,240,220]});
   }
   const squiggle=(x,y,phase,color)=>Array.from({length:6},(_,j)=>rect(x+j*5,y+([0,5,10,5,0,-5][(j+phase)%6]),5,5,color));
@@ -58,19 +58,26 @@ export function buildGagStates(firstNumber,{draw,rect,shift,glyph,frameBox}) {
   context.push([150,{eyes:'happy'},contextBar(0)],[400,{gazeY:-5},contextBar(0)]);
   story('gag-context','Context feeling full','Watches a memory bar fill, puffs out in coarse block poses, then returns to the original size.',context);
 
-  const promptPanel=(letters,dots=0,glow=false)=>[
-    ...frameBox(45,10,110,45,glow?GOLD:PAPER),
-    ...glyph('>',55,20,3,INK),
-    ...Array.from({length:letters},(_,j)=>rect(75+j*10,25,5,5,j%2?GREEN:BLUE)),
-    ...Array.from({length:dots},(_,j)=>rect(80+j*15,40,5,5,INK)),
-    ...(glow?[rect(35,20,5,5,GOLD),rect(160,20,5,5,GOLD),rect(95,0,5,5,GOLD)]:[])];
-  const prompt=[[300,{gazeY:-5},promptPanel(0)],[120,{left:'point',right:'point',gazeY:-5},promptPanel(0)],
-    [120,{left:'half-wave',right:'half-wave',gazeY:-5},promptPanel(0)]];
-  for(let i=0;i<14;i++)prompt.push([100,{left:i%2?'wave':'half-wave',right:i%2?'half-wave':'wave',gazeY:-5},promptPanel(Math.min(7,1+Math.floor(i/2)),0,i%2===0)]);
-  prompt.push([200,{left:'point',right:'point',eyes:'happy'},promptPanel(7,0,true)]);
-  for(let cycle=0;cycle<2;cycle++)for(let dots=1;dots<=3;dots++)prompt.push([200,{gazeY:-5,eyes:cycle===1&&dots===2?'closed':'open'},promptPanel(7,dots)]);
-  prompt.push([250,{gazeY:-5},promptPanel(7,3)],[100,{eyes:'closed'},promptPanel(0)],[350,{gazeY:-5},promptPanel(0)]);
-  story('gag-prompt','Air prompt','Types glowing pixel code in the air, then waits beneath an animated ellipsis.',prompt);
+  // Quiet thought beats: fixed dots, deliberate holds, and one steady idea.
+  // Avoid alternating panel colors or blinking highlights in this loop.
+  const thoughtDots=()=>[rect(65,30,5,5,BLUE),rect(90,30,5,5,BLUE),rect(115,30,5,5,BLUE)];
+  const idea=()=>[rect(170,25,15,5,GOLD),rect(165,30,25,15,GOLD),rect(170,45,15,5,GOLD),
+    rect(170,50,15,5,INK),rect(175,55,5,5,INK)];
+  const prompt=[[600,{gazeY:-5},thoughtDots()],
+    [220,{right:'point',gazeY:-5},thoughtDots()],
+    [220,{right:'half-head',gazeY:-5},thoughtDots()],
+    [450,{right:'head',gazeY:-5},thoughtDots()]];
+  for(let i=0;i<3;i++)prompt.push(
+    [320,{right:'scratch',gazeY:-5,gazeX:i===1?5:-5},thoughtDots()],
+    [320,{right:'head',gazeY:-5,gazeX:i===1?5:-5},thoughtDots()]);
+  prompt.push([650,{right:'head',gazeY:-5},thoughtDots()],
+    [250,{right:'half-head',gazeX:5},[...thoughtDots(),...idea()]],
+    [350,{right:'point',gazeX:5},[...thoughtDots(),...idea()]],
+    [900,{eyes:'happy'},[...thoughtDots(),...idea()]],
+    [350,{eyes:'happy'},thoughtDots()],
+    [350,{},thoughtDots()],
+    [600,{gazeY:-5},thoughtDots()]);
+  story('gag-prompt','Deep thought','Studies three steady pixel dots, scratches its head, then pauses with a small idea before settling back.',prompt);
 
   function robot(x,step,waving=false) {
     return [rect(x+10,100,25,20,BLUE),rect(x+5,120,35,25,BLUE),rect(x+20,90,5,10,INK),rect(x+15,85,15,5,GOLD),

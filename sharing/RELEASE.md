@@ -1,7 +1,5 @@
-All 62 mascot animations are now available as individual transparent GIFs in `mascot-gifs.zip`.
+Replaced the flashing `gag-prompt` air-typing animation with a quiet Deep thought loop.
 
-Includes the 22 originals, 8 accessory variants, 22 extended activities and all 10 extended gags, including the improved coffee break. Each file uses its state ID, preserved colors and crisp 2x pixel scaling at 480 x 440. Done states play once and settle into the resting pose; other states loop. GIF timing is sampled in browser-safe 20ms steps.
+The mascot studies three steady pixel dots, scratches its head with deliberate holds, then pauses with a small, steady idea bulb. The original pixel artwork, state identifier and speech-caption behavior are preserved. Reduced motion shows the settled idea pose.
 
-The playground, extended comparison and gag gallery offer individual GIF downloads. The GIF ZIP includes a manifest, guide and attribution. The asset ZIP also includes the individual GIF folder for offline use. All existing SVG/React animation timelines are unchanged. Source includes a reproducible GIF exporter and dependency pin.
-
-The previous showcase GIFs and all original ZIP downloads remain available. Attribution and reuse status remain in NOTICE.md.
+Updated SVG, individual transparent GIF, gag showcase and all ZIP downloads. The other 61 animations are unchanged. The GIF ZIP still includes all 62 states. Attribution and reuse status remain in NOTICE.md.
