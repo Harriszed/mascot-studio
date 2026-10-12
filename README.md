@@ -18,7 +18,7 @@ The `*-fluid` collection covers all 22 activities: idle, thinking, using a tool,
 
 Open [the side-by-side comparison](https://harriszed.github.io/mascot-studio/mascot/fluid.html). The page also works offline from the asset pack. Each variant is available through the React `state` prop, for example `<ClaudeMascot state="greeting-fluid" />`.
 
-[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) Â· [**Download v1.4.2**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.4.2) Â· [**Creation skill**](skills/mascot-studio/SKILL.md)
+[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) Â· [**Download v1.5.0**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.5.0) Â· [**Creation skill**](skills/mascot-studio/SKILL.md)
 
 [![Animated showcase of Claude mascot activity states](sharing/mascot-showcase.gif)](https://harriszed.github.io/mascot-studio/mascot/)
 
@@ -73,22 +73,28 @@ Try a brief like: ?Add wizard hats to idle, thinking, and reading; black sunglas
 
 ## Download GIFs
 
+[**Download all 62 individual animations as GIFs (ZIP)**](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/mascot-gifs.zip)
+
+One transparent GIF per state: all 22 originals, 8 accessories, 22 extended activities and 10 gags. Each is 480 x 440 pixels with crisp 2x pixel scaling and preserved colors. Done states play once and settle; the rest loop. GIF timing uses browser-safe 20ms steps, including the original walking gait. The live playground also has an individual GIF download for every state.
+
+
 Save a ready-made looping showcase for Reddit, Discord, or sharing:
 
-- [Extended pixel gags GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/gag-showcase.gif) - all ten gags, including the improved coffee break.
-- [Extended activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/fluid-showcase.gif) - all 22 extended activities.
-- [Original activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/mascot-showcase.gif) - a selection of original activity states.
-- [Originals and accessories GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/reddit-mascot-showcase.gif) - square showcase with accessory variants.
+- [Extended pixel gags GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/gag-showcase.gif) - all ten gags, including the improved coffee break.
+- [Extended activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/fluid-showcase.gif) - all 22 extended activities.
+- [Original activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/mascot-showcase.gif) - a selection of original activity states.
+- [Originals and accessories GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/reddit-mascot-showcase.gif) - square showcase with accessory variants.
 
-These showcase GIFs include their preview backgrounds and labels. Individual transparent animation downloads are SVGs in the asset pack.
+Showcase GIFs include preview backgrounds and labels. The individual GIF ZIP has transparent backgrounds and no labels.
 
 ## Pick your download
 
 | You want toâ€¦ | Download | Includes |
 | --- | --- | --- |
-| Use the ready-made animations | [Asset pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/mascot-assets.zip) | SVGs, preview, state mapping, and integration guide |
-| Install the creation skill | [Mascot Studio skill](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/mascot-studio.zip) | Skill instructions, helper script, and pipeline reference |
-| Edit the mascots and create more | [Complete source](https://github.com/Harriszed/mascot-studio/releases/download/v1.4.2/mascot-studio-source.zip) | Editable project, preview, and skill together |
+| Download every animation as a GIF | [Individual GIF pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/mascot-gifs.zip) | 62 transparent GIFs, state manifest and attribution |
+| Use the ready-made animations | [Asset pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/mascot-assets.zip) | SVGs, preview, state mapping, and integration guide |
+| Install the creation skill | [Mascot Studio skill](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/mascot-studio.zip) | Skill instructions, helper script, and pipeline reference |
+| Edit the mascots and create more | [Complete source](https://github.com/Harriszed/mascot-studio/releases/download/v1.5.0/mascot-studio-source.zip) | Editable project, preview, and skill together |
 
 > Unofficial community project. Reference animation by [Ayotomiwa Wale-Durojaye](https://ayotomcs.me/claude-mascot); Claude character by Anthropic. Artwork redistribution permission remains unverified. Read [attribution and reuse status](NOTICE.md).
 
@@ -114,7 +120,7 @@ You can also request an original character or new activity. Specify the activiti
 
 ## Run and rebuild
 
-Node.js 18+; no packages need installing. Commands work on Windows, macOS, and Linux.
+The SVG build and preview require Node.js 18+ without extra packages. Full releases also require Python 3.10+ and the pinned Pillow dependency. Commands work on Windows, macOS, and Linux.
 
 ```sh
 npm run dev
@@ -123,16 +129,18 @@ npm run dev
 Open http://127.0.0.1:3000/mascot/index.html. The generated preview also opens directly from `public/mascot/index.html`.
 
 ```sh
+python -m pip install -r scripts/requirements-gifs.txt
 npm run release
 ```
 
-Creates three downloads in `release/`:
+Creates four ZIP downloads in `release/`, plus the existing showcase GIFs:
 
-- `mascot-assets.zip`: preview, SVGs, references, manifests, guide, and notice.
+- `mascot-gifs.zip`: all 62 individual transparent GIFs, manifest, guide, and notice.
+- `mascot-assets.zip`: preview, SVGs, individual GIFs, references, manifests, guide, and notice.
 - `mascot-studio.zip`: complete creation skill and notice.
 - `mascot-studio-source.zip`: editable project, skill, and preview.
 
-The preview download is refreshed at `public/mascot/claude-mascot-svg-pack.zip`.
+The live preview packs are refreshed at `public/mascot/claude-mascot-svg-pack.zip` and `public/mascot/claude-mascot-gif-pack.zip`.
 
 ## Source layout
 
@@ -145,3 +153,15 @@ The preview download is refreshed at `public/mascot/claude-mascot-svg-pack.zip`.
 | `sharing/` | Post drafts, media, and publishing guide |
 
 See [publishing instructions](sharing/PUBLISHING.md) for releases and the hosted preview.
+
+### Regenerate individual GIFs
+
+SVG builds require only Node.js. GIF exports and `npm run release` additionally require Python 3.10+ and Pillow:
+
+```sh
+python -m pip install -r scripts/requirements-gifs.txt
+npm run export:gifs
+npm run release
+```
+
+`npm run export:gifs` writes `public/mascot/gifs/`; the release build packages them as `mascot-gifs.zip`. Authored SVG and React timelines remain unchanged.

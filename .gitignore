@@ -6,3 +6,5 @@ output/
 .claude/
 .playwright-cli/
 release/
+__pycache__/
+*.pyc

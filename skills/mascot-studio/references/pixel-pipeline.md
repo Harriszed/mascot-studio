@@ -16,6 +16,7 @@ These details describe the supplied code layout. Check the current files before 
 | `src/components/claude-mascot/ClaudeMascot.tsx` | React API, supported `MascotState` union, runtime playback, and done-to-idle timer. |
 | `scripts/build-claude-mascot.mjs` | Compiles states and original reference exports. |
 | `scripts/build-mascot-preview.mjs` | Generates activity selectors, gallery, downloads, and walking lane. |
+| `scripts/export-mascot-gifs.py` | Transparent individual 2x GIF exports from authored states; requires the pinned Pillow dependency. |
 | `scripts/package-release.mjs` | Packages state SVGs, reference exports, manifests, guide, and preview. |
 | `src/components/claude-mascot/artwork.json` | Generated CSS/markup used by React and the preview generator. |
 | `public/mascot/` | Generated SVGs, manifests, preview, and ZIP; README is maintained manually. |
@@ -57,3 +58,7 @@ Run the build before packaging. The pack currently includes all top-level state 
 ## Gag collection
 
 `scripts/mascot-gag-art.mjs` supplies ten `gag-*` states, already authored as extended stories rather than base/variant pairs. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.
+
+## Individual GIF exports
+
+All registered states also export to `public/mascot/gifs/<state-id>.gif`. Install `python -m pip install -r scripts/requirements-gifs.txt` before `npm run export:gifs` or `npm run release`. The SVG-only `npm run build` remains Node-only. The exporter uses original colors, transparency, nearest-neighbor 2x scaling and browser-safe 20ms samples. Done states omit the loop extension and include the terminal resting pose. Packaging writes `mascot-gifs.zip` and includes the GIF folder in the full asset pack. Verify decoded frames for transparency, disposal, timing and the correct loop metadata when changing this exporter.

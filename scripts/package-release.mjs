@@ -25,6 +25,7 @@ function crc32(data) {
 async function files(directory, prefix = '') {
   const result = [];
   for (const entry of (await readdir(directory, { withFileTypes: true })).sort((a,b) => a.name.localeCompare(b.name))) {
+    if (entry.name === '__pycache__' || entry.name.endsWith('.pyc')) continue;
     const name = prefix + entry.name;
     if (entry.isDirectory()) result.push(...await files(path.join(directory, entry.name), name + '/'));
     else if (entry.isFile()) result.push([name, path.join(directory, entry.name)]);
@@ -56,8 +57,14 @@ async function zip(destination, entries) {
   console.log(`Packaged ${path.relative(root,destination)} (${entries.length} files)`);
 }
 await copyFile(path.join(root,'NOTICE.md'),path.join(assets,'NOTICE.md'));
+const gifNames = new Set(JSON.parse(await readFile(path.join(assets,'gifs/manifest.json'),'utf8')).states.map(s => s.file));
+const gifEntries = (await files(path.join(assets,'gifs'))).filter(([name]) => gifNames.has(name) || ['manifest.json','README.md','NOTICE.md'].includes(name));
+if (gifEntries.filter(([name]) => name.endsWith('.gif')).length !== gifNames.size) throw new Error('GIF exports are incomplete; run npm run export:gifs');
+await zip(path.join(release,'mascot-gifs.zip'),gifEntries);
+await copyFile(path.join(release,'mascot-gifs.zip'),path.join(assets,'claude-mascot-gif-pack.zip'));
 const assetEntries = (await files(assets)).filter(([name]) =>
   !name.includes('/') && /\.(svg|json|md|html)$/.test(name) || name.startsWith('reference/'));
+assetEntries.push(...gifEntries.map(([name,filename]) => ['gifs/'+name,filename]));
 await zip(path.join(release,'mascot-assets.zip'),assetEntries);
 await copyFile(path.join(release,'mascot-assets.zip'),path.join(assets,'claude-mascot-svg-pack.zip'));
 const skillEntries = (await files(path.join(root,'skills/mascot-studio'),'mascot-studio/'));

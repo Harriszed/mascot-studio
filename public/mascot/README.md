@@ -167,3 +167,7 @@ Open `gags.html` for all ten new stories. Speech-bubble captions are supplied by
 | `gag-deploy` | Ignites a rocket and waves as it launches through a pixel trail. |
 
 Use `<ClaudeMascot state="gag-robot" />` or load `gag-robot.svg`. These states use `collection: "gags"`, `extended: true`, and `style: "original-block-pixel"` metadata. All ten loop, pause, honor speed controls, and show a static readable pose with reduced motion.
+
+## Individual GIF downloads
+
+Open `index.html` and select a state to download its transparent GIF. Each file is in `gifs/<state-id>.gif`; all 62 are available in `claude-mascot-gif-pack.zip` on the live site or the `mascot-gifs.zip` release download. The asset pack includes the GIF folder for offline use. GIFs are 480 x 440, use crisp 2x scaling and no captions or background. GIF timing is sampled at 50fps (20ms steps). Done states play once and hold their resting pose; the other states loop. See `gifs/manifest.json` for timings.

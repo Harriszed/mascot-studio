@@ -1,6 +1,6 @@
 {
   "name": "claude-mascot",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,8 @@
     "preview": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "pack:assets": "node scripts/package-release.mjs",
-    "release": "npm run build && npm run pack:assets"
+    "export:gifs": "python scripts/export-mascot-gifs.py",
+    "release": "npm run build && npm run export:gifs && npm run pack:assets"
   },
   "engines": {
     "node": ">=18"

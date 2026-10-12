@@ -21,6 +21,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/requirements-gifs.txt
       - run: npm run release
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
