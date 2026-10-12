@@ -7,6 +7,10 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const assets = path.join(root, 'public/mascot');
 const release = path.join(root, 'release');
 await mkdir(release, { recursive: true });
+// Offer the existing sharing GIFs as standalone release downloads.
+for (const name of ['mascot-showcase.gif', 'reddit-mascot-showcase.gif', 'fluid-showcase.gif', 'gag-showcase.gif']) {
+  await copyFile(path.join(root, 'sharing', name), path.join(release, name));
+}
 
 // Standard ZIP writer: no platform-specific shell or runtime dependencies.
 const crcTable = Array.from({ length: 256 }, (_, n) => {

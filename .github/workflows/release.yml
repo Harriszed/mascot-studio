@@ -22,10 +22,10 @@ jobs:
             const release = await github.rest.repos.createRelease({
               ...context.repo, tag_name: tag, name: `${tag} — Complete extended pixel collection`, body
             });
-            for (const name of ['mascot-assets.zip', 'mascot-studio.zip', 'mascot-studio-source.zip']) {
+            for (const name of ['mascot-assets.zip', 'mascot-studio.zip', 'mascot-studio-source.zip', 'mascot-showcase.gif', 'reddit-mascot-showcase.gif', 'fluid-showcase.gif', 'gag-showcase.gif']) {
               const data = fs.readFileSync(`release/${name}`);
               await github.rest.repos.uploadReleaseAsset({
                 ...context.repo, release_id: release.data.id, name, data,
-                headers: { 'content-type': 'application/zip', 'content-length': data.length }
+                headers: { 'content-type': name.endsWith('.gif') ? 'image/gif' : 'application/zip', 'content-length': data.length }
               });
             }
