@@ -9,7 +9,7 @@
     "preview": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "pack:assets": "node scripts/package-release.mjs",
-    "export:gifs": "python scripts/export-mascot-gifs.py",
+    "export:gifs": "python scripts/export-mascot-gifs.py && python scripts/render-tool-study.py",
     "release": "npm run build && npm run export:gifs && npm run pack:assets"
   },
   "engines": {

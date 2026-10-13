@@ -2,6 +2,10 @@
 
 62 animated Claude mascot states: 22 originals, 8 accessory variants, 22 extended pixel animations, and 10 extended gags. Transparent SVG exports, a React component, and a reusable coding-agent skill for creating characters, activities, and accessories.
 
+## One-animation story study
+
+[Compare the new hammering candidate with the original weightlifting animation](https://harriszed.github.io/mascot-studio/mascot/lab/tool-story.html). The 9.66-second story adds a firm grip, weighted strikes, a finishing tap, inspection and recovery using the original chunky pixel shapes. [Download its transparent GIF](https://harriszed.github.io/mascot-studio/mascot/lab/using-tool-story-study.gif). This is a separate review candidate; the 62 production states keep their current animations. The asset/source ZIPs include the comparison under `lab/`; the regular GIF ZIP still contains the 62 production states.
+
 ## Extended pixel gags
 
 Ten original-style visual jokes: `gag-hallucinate`, `gag-tokens`, `gag-context`, `gag-prompt`, `gag-robot`, `gag-nap`, `gag-coffee`, `gag-dance`, `gag-buffering`, and `gag-deploy`. All ten now tell longer stories (roughly 10-12 seconds), with setup, new actions, a payoff and recovery. Each has transparent SVG/GIF exports and a React state identifier. Speech-bubble captions stay in your app. The training bar label and visual question/ellipsis symbols are part of the artwork. `gag-prompt` uses a quiet head-scratch and steady idea pose.

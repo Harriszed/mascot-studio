@@ -62,7 +62,7 @@ function happyEyes(x, y) {
 
 // The resting body is the reference gym sprite at its original scale, relocated
 // to a shared canvas. Reusing it avoids drawing an approximation of the mascot.
-function actor(reference, options = {}) {
+export function drawMascot(reference, options = {}) {
   const { dx = 0, dy = 0, gazeX = 0, gazeY = 0, eyes = 'open', left = 'rest', right = 'rest', lean = 0, planted = false, footLift = [] } = options;
   const shapes = shift(reference.gymBase, 19 + dx, 28 + dy);
   const body = shapes.find(s => s.x === 55 + dx && s.y === 70 + dy);
@@ -99,6 +99,7 @@ function actor(reference, options = {}) {
   else eyeShapes = [rect(65 + ex, 81 + ey, 11, 11), rect(119 + ex, 81 + ey, 11, 11)];
   return [...legs, ...torso, ...arm('left', left), ...arm('right', right), ...eyeShapes];
 }
+const actor = drawMascot;
 function mini(x, y, working = false) {
   return [rect(x + 5, y, 25, 20, CORAL), rect(x, y + 10, 5, 10, CORAL), rect(x + 30, y + (working ? 5 : 10), 5, 10, CORAL),
     ...[5, 12, 20, 27].map(dx => rect(x + dx, y + 20, 3, 7, CORAL)), rect(x + 10, y + 5, 3, 3), rect(x + 23, y + 5, 3, 3)];

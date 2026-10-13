@@ -65,6 +65,8 @@ await copyFile(path.join(release,'mascot-gifs.zip'),path.join(assets,'claude-mas
 const assetEntries = (await files(assets)).filter(([name]) =>
   !name.includes('/') && /\.(svg|json|md|html)$/.test(name) || name.startsWith('reference/'));
 assetEntries.push(...gifEntries.map(([name,filename]) => ['gifs/'+name,filename]));
+// Keep review experiments outside the 62-state registry, but available offline.
+assetEntries.push(...await files(path.join(assets,'lab'),'lab/'));
 await zip(path.join(release,'mascot-assets.zip'),assetEntries);
 await copyFile(path.join(release,'mascot-assets.zip'),path.join(assets,'claude-mascot-svg-pack.zip'));
 const skillEntries = (await files(path.join(root,'skills/mascot-studio'),'mascot-studio/'));
