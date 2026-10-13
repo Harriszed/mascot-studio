@@ -34,7 +34,7 @@ For this project's generator, coordinates, special states, and extension points,
 
 ## Build, inspect, and deliver
 
-For new or improved animation sets, read [references/animation-quality.md](references/animation-quality.md). It covers pixel readability, anchored rigs, action timing, seamless loops, and comparison against the existing set. Apply interface transition rules to the preview controls; preserve deliberate sprite timing in the character itself.
+For new or improved animation sets, read [references/animation-quality.md](references/animation-quality.md) before authoring poses. It covers researched guidance on key-pose blocking, timing versus spacing, stable clusters, secondary motion, optional subpixel/smear techniques, comfortable loops, and export review. Refine readable poses and their holds before adding in-betweens; more frames must retain the reference style. Apply interface transition rules to the preview controls; preserve deliberate sprite timing in the character itself.
 
 Use the selected project's own commands and dependencies. The Claude Mascot project uses `npm run build`, `npm run pack:assets`, and `npm run dev`; inspect its package scripts before running them.
 
