@@ -1,10 +1,9 @@
-// A separate review candidate. The published activity registry stays unchanged.
-import { drawMascot } from './mascot-pixel-art.mjs';
+// Approved hammer story, shared by the study and production animation.
 
 const C='#DD775B', I='#000000', G='#D9A441', P='#FFFDF5';
 const rect=(x,y,w,h,fill=I)=>({x,y,w,h,fill});
 
-export function buildToolStudy(reference) {
+export function buildToolStudy(draw) {
   const frames=[];let elapsed=0;
   const nailTops=[100,110,120,125];
   const bench=()=>[rect(150,135,60,10,I),rect(155,140,10,20,I),rect(195,140,10,20,I)];
@@ -33,7 +32,7 @@ export function buildToolStudy(reference) {
   const laidHammer=()=>[...shaft([180,125],[195,120]),rect(195,105,15,30,I),rect(200,110,5,5,P)];
   function paint({arm='rest',lean=0,dy=0,gazeX=5,gazeY=10,eyes='open',nail=0,
     hammer='laid',headBottom,plankOffset=0,empty=false,left='rest'}={}) {
-    const base=drawMascot(reference,{dy,gazeX:gazeX+lean,gazeY,eyes,planted:true});
+    const base=draw({dy,gazeX:gazeX+lean,gazeY,eyes,planted:true});
     const body=lean===0?[base[4]]:[rect(55+lean,70+dy,85,45,C),rect(55,115+dy,85,20,C)];
     const leftArm=left==='brace'?[rect(33+lean,103+dy,22,18,C),rect(28+lean,108+dy,10,15,C)]:[rect(33+lean,98+dy,22,23,C)];
     const preset=arms[arm];

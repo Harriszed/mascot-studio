@@ -2,13 +2,15 @@
 
 62 animated Claude mascot states: 22 originals, 8 accessory variants, 22 extended pixel animations, and 10 extended gags. Transparent SVG exports, a React component, and a reusable coding-agent skill for creating characters, activities, and accessories.
 
-## One-animation story study
+## Story and weight / v1.7.0
 
-[Compare the new hammering candidate with the original weightlifting animation](https://harriszed.github.io/mascot-studio/mascot/lab/tool-story.html). The 9.66-second story adds a firm grip, weighted strikes, a finishing tap, inspection and recovery using the original chunky pixel shapes. [Download its transparent GIF](https://harriszed.github.io/mascot-studio/mascot/lab/using-tool-story-study.gif). This is a separate review candidate; the 62 production states keep their current animations. The asset/source ZIPs include the comparison under `lab/`; the regular GIF ZIP still contains the 62 production states.
+The approved hammer animation now powers `using-tool-fluid`. The same approach has been applied to all 22 extended activities and ten gags: preparation, deliberate action, expressive poses, payoff and recovery. Delegating puts on shades and conducts floating task cards, with no little helper mascots. Quiet waiting and continuous walking keep their own rhythms.
+
+[Compare originals and extended stories](https://harriszed.github.io/mascot-studio/mascot/fluid.html) or [watch the ten gags](https://harriszed.github.io/mascot-studio/mascot/gags.html). The original 22 animations and eight accessories are preserved. All 62 individual transparent GIFs are in the download ZIP.
 
 ## Extended pixel gags
 
-Ten original-style visual jokes: `gag-hallucinate`, `gag-tokens`, `gag-context`, `gag-prompt`, `gag-robot`, `gag-nap`, `gag-coffee`, `gag-dance`, `gag-buffering`, and `gag-deploy`. All ten now tell longer stories (roughly 10-12 seconds), with setup, new actions, a payoff and recovery. Each has transparent SVG/GIF exports and a React state identifier. Speech-bubble captions stay in your app. The training bar label and visual question/ellipsis symbols are part of the artwork. `gag-prompt` uses a quiet head-scratch and steady idea pose.
+Ten original-style visual jokes: `gag-hallucinate`, `gag-tokens`, `gag-context`, `gag-prompt`, `gag-robot`, `gag-nap`, `gag-coffee`, `gag-dance`, `gag-buffering`, and `gag-deploy`. All ten now tell longer stories (roughly 10-14 seconds), with setup, new actions, a payoff and recovery. Each has transparent SVG/GIF exports and a React state identifier. Speech-bubble captions stay in your app. Progress bars and visual question/dot symbols are part of the artwork. `gag-prompt` uses a quiet head-scratch and steady idea pose.
 
 [Explore the gag gallery](https://harriszed.github.io/mascot-studio/mascot/gags.html) or read the [story and timing notes](sharing/ANIMATION-NOTES.md).
 
@@ -16,13 +18,13 @@ Ten original-style visual jokes: `gag-hallucinate`, `gag-tokens`, `gag-context`,
 
 ## Extended pixel animations
 
-The `*-fluid` collection covers all 22 activities: idle, thinking, using a tool, directing helpers, done, greeting, asleep, reading, writing/editing, running commands, web and code search, testing, committing/pushing, waiting for you, error, compacting, context nearly full, plan progress, server running, typing, and walking. The refined variants reuse the original thick block actor and props, adding weighted action timing, planted feet, steady status indicators, cheek scratches, a steady idea bulb, waves and a bow, an eleven-pose page turn, and a three-result testing sequence. These are separate variants; original states keep their existing behavior.
+The `*-fluid` collection covers all 22 activities, using the original thick block actor and readable prop interactions. Highlights include weighted hammering, shades and floating task cards, a blanket tuck, two page turns and a bookmark, a corrected draft, an amber test and retry, a stamped commit, and physical memory packing. Identifiers remain compatible with the React component; original states keep their existing behavior.
 
 ![All 22 extended pixel mascot animations](sharing/fluid-showcase.gif)
 
 Open [the side-by-side comparison](https://harriszed.github.io/mascot-studio/mascot/fluid.html). The page also works offline from the asset pack. Each variant is available through the React `state` prop, for example `<ClaudeMascot state="greeting-fluid" />`.
 
-[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) Â· [**Download v1.6.0**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.6.0) Â· [**Creation skill**](skills/mascot-studio/SKILL.md)
+[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) | [**Download v1.7.0**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.7.0) | [**Creation skill**](skills/mascot-studio/SKILL.md)
 
 [![Animated showcase of Claude mascot activity states](sharing/mascot-showcase.gif)](https://harriszed.github.io/mascot-studio/mascot/)
 
@@ -77,17 +79,17 @@ Try a brief like: ?Add wizard hats to idle, thinking, and reading; black sunglas
 
 ## Download GIFs
 
-[**Download all 62 individual animations as GIFs (ZIP)**](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/mascot-gifs.zip)
+[**Download all 62 individual animations as GIFs (ZIP)**](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/mascot-gifs.zip)
 
 One transparent GIF per state: all 22 originals, 8 accessories, 22 extended activities and 10 gags. Each is 480 x 440 pixels with crisp 2x pixel scaling and preserved colors. Done states play once and settle; the rest loop. GIF timing uses browser-safe 20ms steps, including the original walking gait. The live playground also has an individual GIF download for every state.
 
 
 Save a ready-made looping showcase for Reddit, Discord, or sharing:
 
-- [Extended pixel gags GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/gag-showcase.gif) - all ten gags, including the improved coffee break.
-- [Extended activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/fluid-showcase.gif) - all 22 extended activities.
-- [Original activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/mascot-showcase.gif) - a selection of original activity states.
-- [Originals and accessories GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/reddit-mascot-showcase.gif) - square showcase with accessory variants.
+- [Extended pixel gags GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/gag-showcase.gif) - all ten gags, including the improved coffee break.
+- [Extended activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/fluid-showcase.gif) - all 22 extended activities.
+- [Original activities GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/mascot-showcase.gif) - a selection of original activity states.
+- [Originals and accessories GIF](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/reddit-mascot-showcase.gif) - square showcase with accessory variants.
 
 Showcase GIFs include preview backgrounds and labels. The individual GIF ZIP has transparent backgrounds and no labels.
 
@@ -95,10 +97,10 @@ Showcase GIFs include preview backgrounds and labels. The individual GIF ZIP has
 
 | You want toâ€¦ | Download | Includes |
 | --- | --- | --- |
-| Download every animation as a GIF | [Individual GIF pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/mascot-gifs.zip) | 62 transparent GIFs, state manifest and attribution |
-| Use the ready-made animations | [Asset pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/mascot-assets.zip) | SVGs, preview, state mapping, and integration guide |
-| Install the creation skill | [Mascot Studio skill](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/mascot-studio.zip) | Skill instructions, helper script, and pipeline reference |
-| Edit the mascots and create more | [Complete source](https://github.com/Harriszed/mascot-studio/releases/download/v1.6.0/mascot-studio-source.zip) | Editable project, preview, and skill together |
+| Download every animation as a GIF | [Individual GIF pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/mascot-gifs.zip) | 62 transparent GIFs, state manifest and attribution |
+| Use the ready-made animations | [Asset pack](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/mascot-assets.zip) | SVGs, preview, state mapping, and integration guide |
+| Install the creation skill | [Mascot Studio skill](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/mascot-studio.zip) | Skill instructions, helper script, and pipeline reference |
+| Edit the mascots and create more | [Complete source](https://github.com/Harriszed/mascot-studio/releases/download/v1.7.0/mascot-studio-source.zip) | Editable project, preview, and skill together |
 
 > Unofficial community project. Reference animation by [Ayotomiwa Wale-Durojaye](https://ayotomcs.me/claude-mascot); Claude character by Anthropic. Artwork redistribution permission remains unverified. Read [attribution and reuse status](NOTICE.md).
 

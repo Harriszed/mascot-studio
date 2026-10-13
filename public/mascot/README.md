@@ -128,7 +128,7 @@ See [NOTICE.md](NOTICE.md). Artwork redistribution permission remains unverified
 
 ## Extended pixel animations
 
-All 22 activities have an extended pixel variant, using the original actor and drawing helpers. Append `-fluid` to any base state identifier, for example `using-tool-fluid`, `done-fluid`, or `searching-web-fluid`. Use the identifier in the React `state` prop or load its matching SVG. The manifest records `collection: "fluid"`, the base activity, and `style: "original-block-pixel"`. `done-fluid` plays once for five seconds and React returns it to `idle-fluid`; its callback follows the same five-second contract as `done`. Other extended states loop. `walking-fluid` has a 0.6-second gait, with wrapper travel controlled separately.
+All 22 activities have an extended pixel variant, using the original actor and drawing helpers. Append `-fluid` to any base state identifier, for example `using-tool-fluid`, `done-fluid`, or `searching-web-fluid`. Use the identifier in the React `state` prop or load its matching SVG. The manifest records `collection: "fluid"`, the base activity, and `style: "original-block-pixel"`. `done-fluid` plays once for five seconds and React returns it to `idle-fluid`; its callback follows the same five-second contract as `done`. Other extended states loop. `walking-fluid` has a 0.8-second gait, with wrapper travel controlled separately.
 
 Open `fluid.html` for the original/fluid comparison, slow playback, pause, replay, and dark backgrounds. All 62 animations are in `index.html` and the asset ZIP.
 
@@ -155,16 +155,16 @@ Open `gags.html` for all ten new stories. Speech-bubble captions are supplied by
 
 | Identifier | Visual sequence |
 | --- | --- |
-| `gag-hallucinate` | Watches rainbow squiggles form an imaginary constellation, checks it carefully, then nods with complete confidence. (10.71s loop.) |
-| `gag-tokens` | Counts coins, overfills the jar, tidies the surplus into a packet, then slides the savings away. (12.29s loop.) |
-| `gag-context` | Fills the memory bar, tries to fit one more card while puffed up, then releases the backlog and returns to size. (10.73s loop.) |
-| `gag-prompt` | Studies steady dots, scratches its head, turns a small idea into a three-step plan, then calmly settles back. (10.76s loop.) |
-| `gag-robot` | A little robot walks in, waves, shares a fist bump and a successful sync, then heads out with a farewell. (10.97s loop.) |
-| `gag-nap` | Yawns, trains through a long nap, wakes for a stretch, almost nods off again, then catches itself. (12.43s loop.) |
-| `gag-coffee` | Studies the steam, stirs the mug, taps the rim twice, gives it one last stir, then relaxes into the warmth. (11.87s loop.) |
-| `gag-dance` | Adjusts the headphones, side-steps with lifted feet, adds a shoulder groove and a little hop, then bows and resets. (9.89s loop.) |
-| `gag-buffering` | Watches the spinner stall, checks its head, celebrates a brief success, then discovers it is buffering again. (11.12s loop.) |
-| `gag-deploy` | Runs launch checks, counts down, watches the rocket accelerate away, confirms delivery, then welcomes the next rocket. (11.02s loop.) |
+| `gag-hallucinate` | Looks up, sketches an imaginary rainbow constellation, double-checks it with a ruler and confidently signs it off. (11.97s loop.) |
+| `gag-tokens` | Counts six coins into a jar, tries to fit the overflow, catches the surplus and packs the savings away. (13.58s loop.) |
+| `gag-context` | Fills the memory bar, puffs up while trying one extra card, presses a release valve and slowly returns to size. (12.20s loop.) |
+| `gag-prompt` | Draws a quiet problem in the air, considers two routes, scratches its head and assembles one steady three-step answer. (12.41s loop.) |
+| `gag-robot` | Welcomes a tiny robot, exchanges a wave and a real fist bump, shares a little victory groove and sees it off. (11.74s loop.) |
+| `gag-nap` | Puts on a nightcap, dozes through training, wakes for a stretch, nearly falls asleep again and finally catches itself. (13.26s loop.) |
+| `gag-coffee` | Grinds a few beans, pours into a tabletop mug, stirs and taps the spoon, then quietly savors the warmth. (13.38s loop.) |
+| `gag-dance` | Puts on headphones, finds the beat, side-steps, poses, adds a small hop and bows before taking them off. (10.19s loop.) |
+| `gag-buffering` | Watches the spinner stall, winds a little crank to restart it, celebrates success and spots a new stall. (10.51s loop.) |
+| `gag-deploy` | Inspects a rocket, pulls a launch lever, counts down, watches the accelerating launch and verifies delivery before resetting the pad. (10.56s loop.) |
 
 Use `<ClaudeMascot state="gag-robot" />` or load `gag-robot.svg`. These states use `collection: "gags"`, `extended: true`, and `style: "original-block-pixel"` metadata. All ten loop, pause, honor speed controls, and show a static readable pose with reduced motion.
 
@@ -174,4 +174,7 @@ Open `index.html` and select a state to download its transparent GIF. Each file 
 
 ## Refined animation stories
 
-The extended activities use separate setup, action and recovery holds, planted feet for small torso movements, and steady status indicators. The ten gag loops now run roughly 10-12 seconds with additional actions and payoffs. Done remains a five-second one-shot. The original 22 states and eight accessories retain their existing behavior.
+The extended activities use separate setup, action and recovery holds, planted feet for small torso movements, and steady status indicators. The ten gag loops now run roughly 10-14 seconds with additional actions and payoffs. Done remains a five-second one-shot. The original 22 states and eight accessories retain their existing behavior.
+
+
+The v1.7 stories use preparation, deliberate work, payoff and recovery. `directing-helpers-fluid` wears shades and dispatches floating task cards; it has no miniature helpers. `using-tool-fluid` is the approved hammering story. The original 30 assets remain unchanged.

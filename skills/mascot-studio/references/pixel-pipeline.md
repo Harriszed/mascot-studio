@@ -7,9 +7,12 @@ These details describe the supplied code layout. Check the current files before 
 | Path | Role |
 | --- | --- |
 | `scripts/mascot-pixel-art.mjs` | Editable state registry, drawing helpers, pose builders, SVG/CSS compiler. |
-| `scripts/mascot-fluid-art.mjs` | Original block actor helpers and weighted storyboards for all 22 extended pixel activities. |
-| `scripts/mascot-extended-activities.mjs` | Additional original-style tool, search, completion, and status storyboards. |
-| `scripts/mascot-gag-art.mjs` | Ten extended gag storyboards using the original actor; speech captions stay in the host. |
+| `scripts/mascot-fluid-art.mjs` | Registry adapter for all 22 extended pixel activities. |
+| `scripts/mascot-activity-stories.mjs` | Editable setup, work, payoff and recovery for the 22 activities. |
+| `scripts/mascot-gag-art.mjs` | Registry adapter for ten gags; speech captions stay in the host. |
+| `scripts/mascot-gag-stories.mjs` | Ten extended gag storyboards and their physical props. |
+| `scripts/mascot-story-kit.mjs` | Original actor geometry, thick arm blocks, coarse torso counterbalance, named beats and clipping. |
+| `scripts/mascot-tool-study.mjs` | Approved hammer story, shared by production and the comparison study. |
 | `scripts/build-gag-preview.mjs` | Dedicated ten-gag gallery, canvas controls, and downloads. |
 | `scripts/build-fluid-preview.mjs` | Original/fluid comparison with slow playback and canvas controls. |
 | `src/components/claude-mascot/reference-artwork.json` | Measured source frames, timings, and original geometry. Retain for comparison. |
@@ -57,7 +60,9 @@ Run the build before packaging. The pack currently includes all top-level state 
 
 ## Gag collection
 
-`scripts/mascot-gag-art.mjs` supplies ten `gag-*` states, already authored as extended stories rather than base/variant pairs. The revised loops run about 10-12 seconds with explicit setup, secondary actions, payoff and recovery. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.
+`scripts/mascot-gag-stories.mjs` authors ten `gag-*` states, registered through `mascot-gag-art.mjs`. Their loops run about 10-14 seconds with explicit setup, work, payoff and recovery. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.
+
+The v1.7 story kit records each frame's `stage` as well as its time and rectangles. Author a meaningful action before adding breakdowns: quick impacts between longer preparation and settle holds read as weight. Coordinate gaze, hands and silhouette around the prop. `handAt` supplies thick orthogonal blocks; inspect its placement rather than treating it as automatic attachment. Torso counterbalance uses two large rectangles, keeping the original block scale. The approved hammer sequence is a useful local benchmark, not a required motif for quiet waiting or continuous walking. The current extended walking cadence is 0.8 seconds; the original measured gait remains unchanged.
 
 ## Individual GIF exports
 

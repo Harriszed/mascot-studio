@@ -371,10 +371,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 5000,
-      "durationMs": 5000,
+      "sourceDurationMs": 6730,
+      "durationMs": 6740,
       "terminalHoldMs": 0,
-      "frameCount": 19
+      "frameCount": 16
     },
     {
       "name": "thinking-fluid",
@@ -383,10 +383,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 5790,
-      "durationMs": 5800,
+      "sourceDurationMs": 7250,
+      "durationMs": 7260,
       "terminalHoldMs": 0,
-      "frameCount": 15
+      "frameCount": 19
     },
     {
       "name": "using-tool-fluid",
@@ -395,10 +395,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4020,
-      "durationMs": 4020,
+      "sourceDurationMs": 9660,
+      "durationMs": 9660,
       "terminalHoldMs": 0,
-      "frameCount": 22
+      "frameCount": 44
     },
     {
       "name": "directing-helpers-fluid",
@@ -407,10 +407,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3800,
-      "durationMs": 3800,
+      "sourceDurationMs": 10160,
+      "durationMs": 10160,
       "terminalHoldMs": 0,
-      "frameCount": 17
+      "frameCount": 42
     },
     {
       "name": "done-fluid",
@@ -422,7 +422,7 @@
       "sourceDurationMs": 5000,
       "durationMs": 5100,
       "terminalHoldMs": 100,
-      "frameCount": 25
+      "frameCount": 12
     },
     {
       "name": "greeting-fluid",
@@ -431,10 +431,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3850,
-      "durationMs": 3860,
+      "sourceDurationMs": 5650,
+      "durationMs": 5660,
       "terminalHoldMs": 0,
-      "frameCount": 23
+      "frameCount": 20
     },
     {
       "name": "asleep-fluid",
@@ -443,10 +443,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 6060,
-      "durationMs": 6060,
+      "sourceDurationMs": 10850,
+      "durationMs": 10860,
       "terminalHoldMs": 0,
-      "frameCount": 25
+      "frameCount": 32
     },
     {
       "name": "reading-fluid",
@@ -455,10 +455,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4080,
-      "durationMs": 4080,
+      "sourceDurationMs": 9340,
+      "durationMs": 9340,
       "terminalHoldMs": 0,
-      "frameCount": 21
+      "frameCount": 40
     },
     {
       "name": "writing-fluid",
@@ -467,10 +467,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3430,
-      "durationMs": 3440,
+      "sourceDurationMs": 7840,
+      "durationMs": 7840,
       "terminalHoldMs": 0,
-      "frameCount": 22
+      "frameCount": 44
     },
     {
       "name": "running-commands-fluid",
@@ -479,10 +479,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3670,
-      "durationMs": 3680,
+      "sourceDurationMs": 6810,
+      "durationMs": 6820,
       "terminalHoldMs": 0,
-      "frameCount": 17
+      "frameCount": 22
     },
     {
       "name": "searching-web-fluid",
@@ -491,10 +491,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4260,
-      "durationMs": 4260,
+      "sourceDurationMs": 6570,
+      "durationMs": 6580,
       "terminalHoldMs": 0,
-      "frameCount": 18
+      "frameCount": 27
     },
     {
       "name": "searching-code-fluid",
@@ -503,10 +503,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4260,
-      "durationMs": 4260,
+      "sourceDurationMs": 6570,
+      "durationMs": 6580,
       "terminalHoldMs": 0,
-      "frameCount": 18
+      "frameCount": 27
     },
     {
       "name": "testing-fluid",
@@ -515,8 +515,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4670,
-      "durationMs": 4680,
+      "sourceDurationMs": 8920,
+      "durationMs": 8920,
       "terminalHoldMs": 0,
       "frameCount": 24
     },
@@ -527,10 +527,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3580,
-      "durationMs": 3580,
+      "sourceDurationMs": 5630,
+      "durationMs": 5640,
       "terminalHoldMs": 0,
-      "frameCount": 18
+      "frameCount": 17
     },
     {
       "name": "waiting-for-you-fluid",
@@ -539,10 +539,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3970,
-      "durationMs": 3980,
+      "sourceDurationMs": 6640,
+      "durationMs": 6640,
       "terminalHoldMs": 0,
-      "frameCount": 9
+      "frameCount": 10
     },
     {
       "name": "error-fluid",
@@ -551,8 +551,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2730,
-      "durationMs": 2740,
+      "sourceDurationMs": 6110,
+      "durationMs": 6120,
       "terminalHoldMs": 0,
       "frameCount": 15
     },
@@ -563,10 +563,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3730,
-      "durationMs": 3740,
+      "sourceDurationMs": 5770,
+      "durationMs": 5780,
       "terminalHoldMs": 0,
-      "frameCount": 14
+      "frameCount": 21
     },
     {
       "name": "context-nearly-full-fluid",
@@ -575,10 +575,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4900,
-      "durationMs": 4900,
+      "sourceDurationMs": 5660,
+      "durationMs": 5660,
       "terminalHoldMs": 0,
-      "frameCount": 9
+      "frameCount": 14
     },
     {
       "name": "plan-progress-fluid",
@@ -587,10 +587,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4450,
-      "durationMs": 4460,
+      "sourceDurationMs": 7530,
+      "durationMs": 7540,
       "terminalHoldMs": 0,
-      "frameCount": 15
+      "frameCount": 24
     },
     {
       "name": "server-running-fluid",
@@ -599,10 +599,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4390,
-      "durationMs": 4400,
+      "sourceDurationMs": 7410,
+      "durationMs": 7420,
       "terminalHoldMs": 0,
-      "frameCount": 10
+      "frameCount": 19
     },
     {
       "name": "typing-fluid",
@@ -611,10 +611,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4060,
-      "durationMs": 4060,
+      "sourceDurationMs": 6840,
+      "durationMs": 6840,
       "terminalHoldMs": 0,
-      "frameCount": 16
+      "frameCount": 18
     },
     {
       "name": "walking-fluid",
@@ -623,10 +623,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 600,
-      "durationMs": 600,
+      "sourceDurationMs": 800,
+      "durationMs": 800,
       "terminalHoldMs": 0,
-      "frameCount": 13
+      "frameCount": 12
     },
     {
       "name": "gag-hallucinate",
@@ -635,10 +635,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 10710,
-      "durationMs": 10720,
+      "sourceDurationMs": 11970,
+      "durationMs": 11980,
       "terminalHoldMs": 0,
-      "frameCount": 37
+      "frameCount": 38
     },
     {
       "name": "gag-tokens",
@@ -647,10 +647,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 12290,
-      "durationMs": 12300,
+      "sourceDurationMs": 13580,
+      "durationMs": 13580,
       "terminalHoldMs": 0,
-      "frameCount": 67
+      "frameCount": 71
     },
     {
       "name": "gag-context",
@@ -659,10 +659,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 10730,
-      "durationMs": 10740,
+      "sourceDurationMs": 12200,
+      "durationMs": 12200,
       "terminalHoldMs": 0,
-      "frameCount": 32
+      "frameCount": 40
     },
     {
       "name": "gag-prompt",
@@ -671,10 +671,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 10760,
-      "durationMs": 10760,
+      "sourceDurationMs": 12410,
+      "durationMs": 12420,
       "terminalHoldMs": 0,
-      "frameCount": 25
+      "frameCount": 31
     },
     {
       "name": "gag-robot",
@@ -683,10 +683,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 10970,
-      "durationMs": 10980,
+      "sourceDurationMs": 11740,
+      "durationMs": 11740,
       "terminalHoldMs": 0,
-      "frameCount": 47
+      "frameCount": 48
     },
     {
       "name": "gag-nap",
@@ -695,10 +695,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 12430,
-      "durationMs": 12440,
+      "sourceDurationMs": 13260,
+      "durationMs": 13260,
       "terminalHoldMs": 0,
-      "frameCount": 40
+      "frameCount": 46
     },
     {
       "name": "gag-coffee",
@@ -707,10 +707,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 11870,
-      "durationMs": 11880,
+      "sourceDurationMs": 13380,
+      "durationMs": 13380,
       "terminalHoldMs": 0,
-      "frameCount": 38
+      "frameCount": 46
     },
     {
       "name": "gag-dance",
@@ -719,10 +719,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 9890,
-      "durationMs": 9900,
+      "sourceDurationMs": 10190,
+      "durationMs": 10200,
       "terminalHoldMs": 0,
-      "frameCount": 36
+      "frameCount": 44
     },
     {
       "name": "gag-buffering",
@@ -731,8 +731,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 11120,
-      "durationMs": 11120,
+      "sourceDurationMs": 10510,
+      "durationMs": 10520,
       "terminalHoldMs": 0,
       "frameCount": 36
     },
@@ -743,10 +743,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 11020,
-      "durationMs": 11020,
+      "sourceDurationMs": 10560,
+      "durationMs": 10560,
       "terminalHoldMs": 0,
-      "frameCount": 39
+      "frameCount": 33
     }
   ]
 }

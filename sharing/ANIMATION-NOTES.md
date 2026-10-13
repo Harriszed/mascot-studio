@@ -1,3 +1,45 @@
+# Story and weight / v1.7.0
+
+Rebuilt all 22 extended activities and ten gags around the approved hammer study. Each authored timeline has named stages, distinctive holds and deliberate recovery. The source uses thick block arms, coarse torso counterbalance and planted original legs. Props are staged around the actor's hands and targets. Deep thought uses steady surfaces; coffee stays on the table. Delegating has shades and floating work cards, with no miniature Claudes.
+
+The 62 IDs stay compatible. Original 22 states and eight accessories are byte-for-byte preserved in compiled artwork and GIF exports. Done remains a five-second one-shot; walking is a continuous 0.8-second cadence. All 32 revised stories have transparent SVG/GIF exports, representative reduced-motion poses and full preview controls.
+
+| ID | Duration | Timed poses | Story |
+| --- | --- | --- | --- |
+| `idle-fluid` | 6.73s | 16 | Checks both sides, rolls its shoulders and stretches before settling into a quiet watch. |
+| `thinking-fluid` | 7.25s | 19 | Studies a problem, scratches its head, tests a steady idea and nods before filing the answer. |
+| `using-tool-fluid` | 9.66s | 46 | Picks up the hammer, makes two weighted strikes and a finishing tap, inspects the nail, then puts the tool down and recovers. |
+| `directing-helpers-fluid` | 10.16s | 43 | Puts on shades, lifts three work cards, conducts their dispatch, then lowers the shades to inspect the result. |
+| `done-fluid` | 5.00s | 13 | Makes one emphatic celebration hop, lands with weight, bows and rests at five seconds. |
+| `greeting-fluid` | 5.65s | 20 | Spots you, perks up, gives three differently timed waves, then bows and relaxes. |
+| `asleep-fluid` | 10.85s | 33 | Tucks a blanket, drifts off, breathes through three slow cycles and snuggles back into it. |
+| `reading-fluid` | 9.34s | 42 | Finds a passage, turns two deliberate pages, places a bookmark and remembers the useful passage. |
+| `writing-fluid` | 7.84s | 45 | Picks up a pencil, drafts two lines, corrects a word, underlines the result and clears the finished sheet. |
+| `running-commands-fluid` | 6.81s | 22 | Composes a command, presses Enter with purpose, follows the output and acknowledges a successful exit. |
+| `searching-web-fluid` | 6.57s | 27 | Picks up a magnifier, compares three web results, retraces a useful match and bookmarks it. |
+| `searching-code-fluid` | 6.57s | 27 | Scans code rows with a magnifier, retraces a match and bookmarks the useful definition. |
+| `testing-fluid` | 8.92s | 24 | Presses three test buttons, investigates an amber result, retries it and celebrates a complete pass. |
+| `committing-fluid` | 5.63s | 17 | Checks the changes, stamps a commit, sends its packet up the branch and waits for delivery confirmation. |
+| `waiting-for-you-fluid` | 6.64s | 11 | Turns toward you, offers an open palm and a small question, then lowers the hand and waits patiently. |
+| `error-fluid` | 6.11s | 15 | Recoils at an unplugged connector, examines it, tries a careful repair and pauses with an honest question. |
+| `compacting-fluid` | 5.77s | 22 | Gathers a loose stack, squares its edges, presses it into a neat packet and files it. |
+| `context-nearly-full-fluid` | 5.66s | 14 | Inspects the nearly full memory case, tries its lid, makes room for a spare card and calmly flags the limit. |
+| `plan-progress-fluid` | 7.53s | 27 | Works through three deliberate notebook checkmarks, shows the completed plan and turns to a fresh page. |
+| `server-running-fluid` | 7.41s | 20 | Monitors steady lights, receives a request, checks a connection and sends a successful response. |
+| `typing-fluid` | 6.84s | 18 | Leans in to listen, follows your growing draft, gives an encouraging nod and waits for the next line. |
+| `walking-fluid` | 0.80s | 24 | A continuous block gait with counterbalanced shoulders and deliberate rectangular foot contacts. |
+| `gag-hallucinate` | 11.97s | 38 | Looks up, sketches an imaginary rainbow constellation, double-checks it with a ruler and confidently signs it off. |
+| `gag-tokens` | 13.58s | 71 | Counts six coins into a jar, tries to fit the overflow, catches the surplus and packs the savings away. |
+| `gag-context` | 12.20s | 40 | Fills the memory bar, puffs up while trying one extra card, presses a release valve and slowly returns to size. |
+| `gag-prompt` | 12.41s | 31 | Draws a quiet problem in the air, considers two routes, scratches its head and assembles one steady three-step answer. |
+| `gag-robot` | 11.74s | 51 | Welcomes a tiny robot, exchanges a wave and a real fist bump, shares a little victory groove and sees it off. |
+| `gag-nap` | 13.26s | 46 | Puts on a nightcap, dozes through training, wakes for a stretch, nearly falls asleep again and finally catches itself. |
+| `gag-coffee` | 13.38s | 52 | Grinds a few beans, pours into a tabletop mug, stirs and taps the spoon, then quietly savors the warmth. |
+| `gag-dance` | 10.19s | 44 | Puts on headphones, finds the beat, side-steps, poses, adds a small hop and bows before taking them off. |
+| `gag-buffering` | 10.51s | 38 | Watches the spinner stall, winds a little crank to restart it, celebrates success and spots a new stall. |
+| `gag-deploy` | 10.56s | 33 | Inspects a rocket, pulls a launch lever, counts down, watches the accelerating launch and verifies delivery before resetting the pad. |
+
+
 # Animation refinement / v1.6.0
 
 Built using the researched Mascot Studio guidance: readable key poses, separate setup/action/recovery timing, stable pixel clusters, deliberate secondary motion, and complete loop recovery.
