@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -40 240 220" width="240" height="220" class="cm-root" data-state="idle-fluid" role="img" aria-label="Idle / extended pixel" shape-rendering="crispEdges"><title>Idle / extended pixel</title><style>.cm-root[data-state="idle-fluid"] .cm-frame { opacity: 0; }
 .cm-root[data-state="idle-fluid"] .cm-frame-0 { opacity: 1; }
-.cm-root[data-state="idle-fluid"] .cm-frame-0 { animation: cm-idle-fluid-0 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-0 { 0% { opacity: 1; } 19.417476% { opacity: 0; } 32.038835% { opacity: 1; } 35.679612% { opacity: 0; } 48.300971% { opacity: 1; } 54.368932% { opacity: 0; } 56.553398% { opacity: 1; } 62.621359% { opacity: 0; } 83.009709% { opacity: 1; } 100% { opacity: 1; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-1 { animation: cm-idle-fluid-1 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-1 { 0% { opacity: 0; } 19.417476% { opacity: 1; } 22.330097% { opacity: 0; } 29.61165% { opacity: 1; } 32.038835% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-2 { animation: cm-idle-fluid-2 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-2 { 0% { opacity: 0; } 22.330097% { opacity: 1; } 29.61165% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-3 { animation: cm-idle-fluid-3 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-3 { 0% { opacity: 0; } 35.679612% { opacity: 1; } 38.592233% { opacity: 0; } 45.873786% { opacity: 1; } 48.300971% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-4 { animation: cm-idle-fluid-4 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-4 { 0% { opacity: 0; } 38.592233% { opacity: 1; } 45.873786% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-5 { animation: cm-idle-fluid-5 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-5 { 0% { opacity: 0; } 54.368932% { opacity: 1; } 56.553398% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-6 { animation: cm-idle-fluid-6 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-6 { 0% { opacity: 0; } 62.621359% { opacity: 1; } 65.048544% { opacity: 0; } 80.582524% { opacity: 1; } 83.009709% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-7 { animation: cm-idle-fluid-7 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-7 { 0% { opacity: 0; } 65.048544% { opacity: 1; } 67.475728% { opacity: 0; } 78.15534% { opacity: 1; } 80.582524% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-8 { animation: cm-idle-fluid-8 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-8 { 0% { opacity: 0; } 67.475728% { opacity: 1; } 71.359223% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-9 { animation: cm-idle-fluid-9 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-9 { 0% { opacity: 0; } 71.359223% { opacity: 1; } 74.271845% { opacity: 0; } 100% { opacity: 0; } }
-.cm-root[data-state="idle-fluid"] .cm-frame-10 { animation: cm-idle-fluid-10 calc(4.12s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
-@keyframes cm-idle-fluid-10 { 0% { opacity: 0; } 74.271845% { opacity: 1; } 78.15534% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-0 { animation: cm-idle-fluid-0 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-0 { 0% { opacity: 1; } 22% { opacity: 0; } 32.4% { opacity: 1; } 35.4% { opacity: 0; } 45.8% { opacity: 1; } 50.8% { opacity: 0; } 52.6% { opacity: 1; } 57.6% { opacity: 0; } 81% { opacity: 1; } 100% { opacity: 1; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-1 { animation: cm-idle-fluid-1 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-1 { 0% { opacity: 0; } 22% { opacity: 1; } 24.4% { opacity: 0; } 30.4% { opacity: 1; } 32.4% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-2 { animation: cm-idle-fluid-2 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-2 { 0% { opacity: 0; } 24.4% { opacity: 1; } 30.4% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-3 { animation: cm-idle-fluid-3 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-3 { 0% { opacity: 0; } 35.4% { opacity: 1; } 37.8% { opacity: 0; } 43.8% { opacity: 1; } 45.8% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-4 { animation: cm-idle-fluid-4 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-4 { 0% { opacity: 0; } 37.8% { opacity: 1; } 43.8% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-5 { animation: cm-idle-fluid-5 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-5 { 0% { opacity: 0; } 50.8% { opacity: 1; } 52.6% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-6 { animation: cm-idle-fluid-6 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-6 { 0% { opacity: 0; } 57.6% { opacity: 1; } 59.6% { opacity: 0; } 79% { opacity: 1; } 81% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-7 { animation: cm-idle-fluid-7 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-7 { 0% { opacity: 0; } 59.6% { opacity: 1; } 61.6% { opacity: 0; } 77% { opacity: 1; } 79% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-8 { animation: cm-idle-fluid-8 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-8 { 0% { opacity: 0; } 61.6% { opacity: 1; } 64.8% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-9 { animation: cm-idle-fluid-9 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-9 { 0% { opacity: 0; } 64.8% { opacity: 1; } 73.8% { opacity: 0; } 100% { opacity: 0; } }
+.cm-root[data-state="idle-fluid"] .cm-frame-10 { animation: cm-idle-fluid-10 calc(5s * var(--cm-tempo, 1)) steps(1, end) var(--cm-repeat, infinite) both; }
+@keyframes cm-idle-fluid-10 { 0% { opacity: 0; } 73.8% { opacity: 1; } 77% { opacity: 0; } 100% { opacity: 0; } }
 .cm-root[data-paused="true"] .cm-frame { animation-play-state: paused !important; }
-@media (prefers-reduced-motion: reduce) { .cm-root[data-state="idle-fluid"] .cm-frame { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .cm-root[data-state="idle-fluid"] .cm-frame { animation: none !important; opacity: 0; } .cm-root[data-state="idle-fluid"] .cm-frame-0 { opacity: 1; } }
 </style><g class="cm-frame cm-frame-0"><rect x="129" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="108" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="76" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="55" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="55" y="70" width="85" height="65" fill="var(--cm-color, #DD775B)"/><rect x="33" y="98" width="22" height="23" fill="var(--cm-color, #DD775B)"/><rect x="140" y="98" width="22" height="23" fill="var(--cm-color, #DD775B)"/><rect x="65" y="81" width="11" height="11" fill="var(--cm-ink, #000000)"/><rect x="119" y="81" width="11" height="11" fill="var(--cm-ink, #000000)"/></g>
 <g class="cm-frame cm-frame-1"><rect x="129" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="108" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="76" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="55" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="55" y="70" width="85" height="65" fill="var(--cm-color, #DD775B)"/><rect x="33" y="98" width="22" height="23" fill="var(--cm-color, #DD775B)"/><rect x="140" y="98" width="22" height="23" fill="var(--cm-color, #DD775B)"/><rect x="60" y="81" width="11" height="11" fill="var(--cm-ink, #000000)"/><rect x="114" y="81" width="11" height="11" fill="var(--cm-ink, #000000)"/></g>
 <g class="cm-frame cm-frame-2"><rect x="129" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="108" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="76" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="55" y="130" width="11" height="26" fill="var(--cm-color, #DD775B)"/><rect x="55" y="70" width="85" height="65" fill="var(--cm-color, #DD775B)"/><rect x="33" y="98" width="22" height="23" fill="var(--cm-color, #DD775B)"/><rect x="140" y="98" width="22" height="23" fill="var(--cm-color, #DD775B)"/><rect x="55" y="81" width="11" height="11" fill="var(--cm-ink, #000000)"/><rect x="109" y="81" width="11" height="11" fill="var(--cm-ink, #000000)"/></g>

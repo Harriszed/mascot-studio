@@ -371,8 +371,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4120,
-      "durationMs": 4120,
+      "sourceDurationMs": 5000,
+      "durationMs": 5000,
       "terminalHoldMs": 0,
       "frameCount": 19
     },
@@ -383,10 +383,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3230,
-      "durationMs": 3240,
+      "sourceDurationMs": 5790,
+      "durationMs": 5800,
       "terminalHoldMs": 0,
-      "frameCount": 19
+      "frameCount": 15
     },
     {
       "name": "using-tool-fluid",
@@ -395,8 +395,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3220,
-      "durationMs": 3220,
+      "sourceDurationMs": 4020,
+      "durationMs": 4020,
       "terminalHoldMs": 0,
       "frameCount": 22
     },
@@ -407,8 +407,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2890,
-      "durationMs": 2900,
+      "sourceDurationMs": 3800,
+      "durationMs": 3800,
       "terminalHoldMs": 0,
       "frameCount": 17
     },
@@ -431,8 +431,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3000,
-      "durationMs": 3000,
+      "sourceDurationMs": 3850,
+      "durationMs": 3860,
       "terminalHoldMs": 0,
       "frameCount": 23
     },
@@ -443,10 +443,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3920,
-      "durationMs": 3920,
+      "sourceDurationMs": 6060,
+      "durationMs": 6060,
       "terminalHoldMs": 0,
-      "frameCount": 20
+      "frameCount": 25
     },
     {
       "name": "reading-fluid",
@@ -455,10 +455,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2990,
-      "durationMs": 3000,
+      "sourceDurationMs": 4080,
+      "durationMs": 4080,
       "terminalHoldMs": 0,
-      "frameCount": 17
+      "frameCount": 21
     },
     {
       "name": "writing-fluid",
@@ -467,8 +467,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2550,
-      "durationMs": 2560,
+      "sourceDurationMs": 3430,
+      "durationMs": 3440,
       "terminalHoldMs": 0,
       "frameCount": 22
     },
@@ -479,8 +479,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2510,
-      "durationMs": 2520,
+      "sourceDurationMs": 3670,
+      "durationMs": 3680,
       "terminalHoldMs": 0,
       "frameCount": 17
     },
@@ -491,10 +491,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2530,
-      "durationMs": 2540,
+      "sourceDurationMs": 4260,
+      "durationMs": 4260,
       "terminalHoldMs": 0,
-      "frameCount": 16
+      "frameCount": 18
     },
     {
       "name": "searching-code-fluid",
@@ -503,10 +503,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2530,
-      "durationMs": 2540,
+      "sourceDurationMs": 4260,
+      "durationMs": 4260,
       "terminalHoldMs": 0,
-      "frameCount": 16
+      "frameCount": 18
     },
     {
       "name": "testing-fluid",
@@ -515,8 +515,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3690,
-      "durationMs": 3700,
+      "sourceDurationMs": 4670,
+      "durationMs": 4680,
       "terminalHoldMs": 0,
       "frameCount": 24
     },
@@ -527,8 +527,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2610,
-      "durationMs": 2620,
+      "sourceDurationMs": 3580,
+      "durationMs": 3580,
       "terminalHoldMs": 0,
       "frameCount": 18
     },
@@ -539,8 +539,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3050,
-      "durationMs": 3060,
+      "sourceDurationMs": 3970,
+      "durationMs": 3980,
       "terminalHoldMs": 0,
       "frameCount": 9
     },
@@ -551,8 +551,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2180,
-      "durationMs": 2180,
+      "sourceDurationMs": 2730,
+      "durationMs": 2740,
       "terminalHoldMs": 0,
       "frameCount": 15
     },
@@ -563,8 +563,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2730,
-      "durationMs": 2740,
+      "sourceDurationMs": 3730,
+      "durationMs": 3740,
       "terminalHoldMs": 0,
       "frameCount": 14
     },
@@ -575,10 +575,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2400,
-      "durationMs": 2400,
+      "sourceDurationMs": 4900,
+      "durationMs": 4900,
       "terminalHoldMs": 0,
-      "frameCount": 12
+      "frameCount": 9
     },
     {
       "name": "plan-progress-fluid",
@@ -587,8 +587,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3170,
-      "durationMs": 3180,
+      "sourceDurationMs": 4450,
+      "durationMs": 4460,
       "terminalHoldMs": 0,
       "frameCount": 15
     },
@@ -599,10 +599,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3090,
-      "durationMs": 3100,
+      "sourceDurationMs": 4390,
+      "durationMs": 4400,
       "terminalHoldMs": 0,
-      "frameCount": 15
+      "frameCount": 10
     },
     {
       "name": "typing-fluid",
@@ -611,8 +611,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 2890,
-      "durationMs": 2900,
+      "sourceDurationMs": 4060,
+      "durationMs": 4060,
       "terminalHoldMs": 0,
       "frameCount": 16
     },
@@ -635,10 +635,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3760,
-      "durationMs": 3760,
+      "sourceDurationMs": 10710,
+      "durationMs": 10720,
       "terminalHoldMs": 0,
-      "frameCount": 24
+      "frameCount": 37
     },
     {
       "name": "gag-tokens",
@@ -647,10 +647,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 5100,
-      "durationMs": 5100,
+      "sourceDurationMs": 12290,
+      "durationMs": 12300,
       "terminalHoldMs": 0,
-      "frameCount": 47
+      "frameCount": 67
     },
     {
       "name": "gag-context",
@@ -659,10 +659,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 3720,
-      "durationMs": 3720,
+      "sourceDurationMs": 10730,
+      "durationMs": 10740,
       "terminalHoldMs": 0,
-      "frameCount": 18
+      "frameCount": 32
     },
     {
       "name": "gag-prompt",
@@ -671,10 +671,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 6860,
-      "durationMs": 6860,
+      "sourceDurationMs": 10760,
+      "durationMs": 10760,
       "terminalHoldMs": 0,
-      "frameCount": 17
+      "frameCount": 25
     },
     {
       "name": "gag-robot",
@@ -683,10 +683,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 5090,
-      "durationMs": 5100,
+      "sourceDurationMs": 10970,
+      "durationMs": 10980,
       "terminalHoldMs": 0,
-      "frameCount": 39
+      "frameCount": 47
     },
     {
       "name": "gag-nap",
@@ -695,10 +695,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4820,
-      "durationMs": 4820,
+      "sourceDurationMs": 12430,
+      "durationMs": 12440,
       "terminalHoldMs": 0,
-      "frameCount": 30
+      "frameCount": 40
     },
     {
       "name": "gag-coffee",
@@ -707,10 +707,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 5450,
-      "durationMs": 5460,
+      "sourceDurationMs": 11870,
+      "durationMs": 11880,
       "terminalHoldMs": 0,
-      "frameCount": 31
+      "frameCount": 38
     },
     {
       "name": "gag-dance",
@@ -719,10 +719,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4660,
-      "durationMs": 4660,
+      "sourceDurationMs": 9890,
+      "durationMs": 9900,
       "terminalHoldMs": 0,
-      "frameCount": 29
+      "frameCount": 36
     },
     {
       "name": "gag-buffering",
@@ -731,8 +731,8 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 5040,
-      "durationMs": 5040,
+      "sourceDurationMs": 11120,
+      "durationMs": 11120,
       "terminalHoldMs": 0,
       "frameCount": 36
     },
@@ -743,10 +743,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 4610,
-      "durationMs": 4620,
+      "sourceDurationMs": 11020,
+      "durationMs": 11020,
       "terminalHoldMs": 0,
-      "frameCount": 30
+      "frameCount": 39
     }
   ]
 }

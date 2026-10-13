@@ -25,4 +25,6 @@ To regenerate on Windows: install Pillow for Python, then run `python scripts/re
 
 ## Extended pixel collection
 
-`fluid-showcase.gif` is the 18-second showcase of all 22 extended activities. Regenerate with `python scripts/render-fluid-showcase.py` (requires Pillow). The existing `*-fluid` identifiers are retained; the animation style uses the original block actor. Push a `v*` tag to build and attach the four ZIPs and showcase GIFs using the release workflow.
+`fluid-showcase.gif` is the 24-second showcase of all 22 extended activities. Regenerate with `python scripts/render-fluid-showcase.py` (requires Pillow). The existing `*-fluid` identifiers are retained; the animation style uses the original block actor. Push a `v*` tag to build and attach the four ZIPs and showcase GIFs using the release workflow.
+
+The gag showcase covers all ten longer stories across two pages. Both showcase renderers choose a page duration longer than the longest included animation so each story can finish.

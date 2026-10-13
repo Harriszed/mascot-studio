@@ -3,6 +3,7 @@
 Requires Pillow (only for this optional sharing export); Node builds need no deps.
 """
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -22,7 +23,7 @@ def font(size):
     return ImageFont.load_default()
 
 page_size = 6 if gag_mode else 8
-page_seconds = 8 if gag_mode else 6
+page_seconds = math.ceil(max(s['duration'] for s in states)) + 1
 page_count = (len(states) + page_size - 1) // page_size
 frames = []
 for index in range(page_count * page_seconds * 20):
@@ -32,7 +33,7 @@ for index in range(page_count * page_seconds * 20):
     draw = ImageDraw.Draw(image)
     draw.text((32, 24), 'MASCOT STUDIO / EXTENDED PIXEL GAGS' if gag_mode else 'MASCOT STUDIO / EXTENDED PIXEL COLLECTION', font=font(15), fill='#9D452F')
     draw.text((32, 57), 'A few questionable habits.' if gag_mode else 'Same pixels. More personality.', font=font(42), fill='#25231E')
-    draw.text((34, 116), f'{len(states)} visual jokes. Original block style. Bring your own speech bubbles.' if gag_mode else '22 activities. Original block artwork. New key poses and stories.', font=font(17), fill='#70685D')
+    draw.text((34, 116), f'{len(states)} visual jokes. Original block style. Bring your own speech bubbles.' if gag_mode else '22 activities. Original block artwork. Refined poses and deliberate timing.', font=font(17), fill='#70685D')
     for number, state in enumerate(states[group * page_size:group * page_size + page_size]):
         columns = 3 if gag_mode else 4
         left, top = 32 + (number % columns) * (300 if gag_mode else 228), 164 + (number // columns) * 250
@@ -57,7 +58,7 @@ for index in range(page_count * page_seconds * 20):
 out = ROOT / 'sharing'
 out.mkdir(exist_ok=True)
 prefix = 'gag-showcase' if gag_mode else 'fluid-showcase'
-frames[190 if gag_mode else 30].save(out / (prefix + '.png'))
+frames[page_seconds*20+30 if gag_mode else 30].save(out / (prefix + '.png'))
 palette_source = Image.new('RGB', (960, 720 * 4))
 for i, frame in enumerate([frames[0], frames[30], frames[len(frames)//2+30], frames[-45]]):
     palette_source.paste(frame, (0, i * 720))

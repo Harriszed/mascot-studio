@@ -30,7 +30,7 @@ The generator and React component can run without downloading or remeasuring the
 
 Frames have `{ time, shapes }`. Shapes are rectangles `{ x, y, w, h, fill }` or polygons `{ points: [[x, y], ...], fill }`. `compileAnimation` deduplicates identical poses and produces CSS frame holds using `steps(1, end)`. `svgDocument` emits transparent standalone SVGs. Keep frame times ordered and within the state's duration, including a deliberate terminal pose for a one-shot state.
 
-The shared activity viewBox is currently `[-20, -40, 240, 220]`. The resting torso is at `(55, 70)` with size `85 Ã— 65`; eyes begin at `(65, 81)` and `(119, 81)`, each `11 Ã— 11`. The head is the upper region of the body rather than a separate shape. `actor(reference, options)` moves and changes that pose with `dx`, `dy`, gaze, stepped lean, eyes, and arm choices. Reference-derived poses can have different geometry: anchor accessories to each pose's actual body or limb data rather than adding a fixed canvas overlay.
+The shared activity viewBox is currently `[-20, -40, 240, 220]`. The resting torso is at `(55, 70)` with size `85 Ã— 65`; eyes begin at `(65, 81)` and `(119, 81)`, each `11 Ã— 11`. The head is the upper region of the body rather than a separate shape. `actor(reference, options)` moves and changes that pose with `dx`, `dy`, gaze, stepped lean, eyes, and arm choices. Optional `planted` holds the original legs at their floor position while the torso bobs, and `footLift` lifts selected unchanged-width legs by one coarse step. Defaults preserve existing source states. Reference-derived poses can have different geometry: anchor accessories to each pose's actual body or limb data rather than adding a fixed canvas overlay.
 
 The current character is coral `#DD775B` with black eyes. Body and black detail colors compile to `--cm-color` and `--cm-ink`. Other accent colors are literal unless deliberately parameterized. Use explicit blocks, crisp edges, and discrete pose changes for pixel variants. An accessory should follow movement without detaching, hiding the face accidentally, or smoothing the pixel silhouette into rotated vectors.
 
@@ -57,7 +57,7 @@ Run the build before packaging. The pack currently includes all top-level state 
 
 ## Gag collection
 
-`scripts/mascot-gag-art.mjs` supplies ten `gag-*` states, already authored as extended stories rather than base/variant pairs. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.
+`scripts/mascot-gag-art.mjs` supplies ten `gag-*` states, already authored as extended stories rather than base/variant pairs. The revised loops run about 10-12 seconds with explicit setup, secondary actions, payoff and recovery. Speech captions are intentionally omitted. Context puffing is a deliberate user-requested block-body deformation; the four original legs and eyes remain. Optional `reducedFrame` metadata selects a complete representative pose for reduced motion instead of the neutral opening frame. Robot entrance/exit rectangles are intentionally cropped at the canvas edge.
 
 ## Individual GIF exports
 

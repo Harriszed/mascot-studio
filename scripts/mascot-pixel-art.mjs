@@ -63,13 +63,13 @@ function happyEyes(x, y) {
 // The resting body is the reference gym sprite at its original scale, relocated
 // to a shared canvas. Reusing it avoids drawing an approximation of the mascot.
 function actor(reference, options = {}) {
-  const { dx = 0, dy = 0, gazeX = 0, gazeY = 0, eyes = 'open', left = 'rest', right = 'rest', lean = 0 } = options;
+  const { dx = 0, dy = 0, gazeX = 0, gazeY = 0, eyes = 'open', left = 'rest', right = 'rest', lean = 0, planted = false, footLift = [] } = options;
   const shapes = shift(reference.gymBase, 19 + dx, 28 + dy);
   const body = shapes.find(s => s.x === 55 + dx && s.y === 70 + dy);
   const legs = shapes.slice(0, 4);
   const torso = lean === 0 ? [body] : Array.from({ length: 13 }, (_, i) => rect(55 + dx + (i < 4 ? lean : i < 9 ? Math.sign(lean) * 5 : 0), 70 + dy + i * 5, 85, 5, CORAL));
   // Keep the hip roots underneath the torso even when the torso changes pose.
-  for (const leg of legs) { leg.y = 130 + dy; leg.h = 26; }
+  legs.forEach((leg, index) => { leg.y = 130 + (planted ? 0 : dy) - (footLift.includes(index) ? 5 : 0); leg.h = 26; });
   const arm = (side, pose) => {
     const x = side === 'left' ? 33 : 140;
     if (pose === 'rest') return [rect(x + dx, 98 + dy, 22, 23, CORAL)];

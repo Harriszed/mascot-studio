@@ -155,19 +155,23 @@ Open `gags.html` for all ten new stories. Speech-bubble captions are supplied by
 
 | Identifier | Visual sequence |
 | --- | --- |
-| `gag-hallucinate` | Skyward stare, wobbly question mark, rising rainbow squiggles, confident nod. |
-| `gag-tokens` | Counts falling coins into a jar, then watches it overflow. |
-| `gag-context` | A memory bar fills, the original block body puffs out, then shrinks back. |
-| `gag-prompt` | Studies steady dots, scratches its head, then pauses with a small idea. |
-| `gag-robot` | A tiny robot walks in, exchanges waves, and walks out. |
-| `gag-nap` | Sleeps with Z marks beneath a training progress bar, then wakes and stretches. |
-| `gag-coffee` | Stirs a steaming mug on a little table, watches the steam, then relaxes. |
-| `gag-dance` | Headphones, alternating steps, hops and bouncing musical notes. |
-| `gag-buffering` | An eight-step spinner rotates while the mascot waits and checks its head. |
-| `gag-deploy` | Ignites a rocket and waves as it launches through a pixel trail. |
+| `gag-hallucinate` | Watches rainbow squiggles form an imaginary constellation, checks it carefully, then nods with complete confidence. (10.71s loop.) |
+| `gag-tokens` | Counts coins, overfills the jar, tidies the surplus into a packet, then slides the savings away. (12.29s loop.) |
+| `gag-context` | Fills the memory bar, tries to fit one more card while puffed up, then releases the backlog and returns to size. (10.73s loop.) |
+| `gag-prompt` | Studies steady dots, scratches its head, turns a small idea into a three-step plan, then calmly settles back. (10.76s loop.) |
+| `gag-robot` | A little robot walks in, waves, shares a fist bump and a successful sync, then heads out with a farewell. (10.97s loop.) |
+| `gag-nap` | Yawns, trains through a long nap, wakes for a stretch, almost nods off again, then catches itself. (12.43s loop.) |
+| `gag-coffee` | Studies the steam, stirs the mug, taps the rim twice, gives it one last stir, then relaxes into the warmth. (11.87s loop.) |
+| `gag-dance` | Adjusts the headphones, side-steps with lifted feet, adds a shoulder groove and a little hop, then bows and resets. (9.89s loop.) |
+| `gag-buffering` | Watches the spinner stall, checks its head, celebrates a brief success, then discovers it is buffering again. (11.12s loop.) |
+| `gag-deploy` | Runs launch checks, counts down, watches the rocket accelerate away, confirms delivery, then welcomes the next rocket. (11.02s loop.) |
 
 Use `<ClaudeMascot state="gag-robot" />` or load `gag-robot.svg`. These states use `collection: "gags"`, `extended: true`, and `style: "original-block-pixel"` metadata. All ten loop, pause, honor speed controls, and show a static readable pose with reduced motion.
 
 ## Individual GIF downloads
 
 Open `index.html` and select a state to download its transparent GIF. Each file is in `gifs/<state-id>.gif`; all 62 are available in `claude-mascot-gif-pack.zip` on the live site or the `mascot-gifs.zip` release download. The asset pack includes the GIF folder for offline use. GIFs are 480 x 440, use crisp 2x scaling and no captions or background. GIF timing is sampled at 50fps (20ms steps). Done states play once and hold their resting pose; the other states loop. See `gifs/manifest.json` for timings.
+
+## Refined animation stories
+
+The extended activities use separate setup, action and recovery holds, planted feet for small torso movements, and steady status indicators. The ten gag loops now run roughly 10-12 seconds with additional actions and payoffs. Done remains a five-second one-shot. The original 22 states and eight accessories retain their existing behavior.

@@ -1,5 +1,7 @@
-Updated Mascot Studio with research-backed pixel animation guidance, reviewed 2026-10-13.
+Refined all 22 extended pixel activities using the updated Mascot Studio skill, and expanded all ten gags into longer stories.
 
-The skill now covers readable key poses before in-betweens, timing versus spacing, stable pixel clusters, purposeful secondary motion, optional subpixel and smear techniques, prop staging, loop seams, comfortable persistent motion, and exported GIF review. The guide links to the artist tutorials and official documentation used, and separates general principles from adaptations for this flat block mascot.
+The gags now run 9.89-12.43 seconds: imaginary constellations, token overflow and cleanup, memory backlog release, a quiet idea turned into a plan, robot fist bump and sync, a long nap with a false wake-up, coffee stirring and rim taps, a longer headphone dance, a stalled spinner, and launch checks followed by the next rocket. Speech captions remain separate.
 
-The installed and portable skill copies were validated. The creation-skill ZIP and complete-source download contain the updated guidance. All 62 existing animation states, SVGs and individual GIFs are unchanged. Attribution and reuse status remain in NOTICE.md.
+Activities gain deliberate setup/result/recovery timing, supported feet during small torso movements, an eleven-pose page turn, a connected pen grip, steady thinking/warning/server indicators, and representative reduced-motion poses. Done remains a five-second one-shot and the original walking anatomy is retained. The 22 original states and eight accessories are unchanged.
+
+Updated SVGs, individual GIFs, all four ZIPs, galleries and full-story showcase GIFs. The GIF ZIP contains all 62 animations. See sharing/ANIMATION-NOTES.md for per-state timing and stories. Attribution and reuse status remain in NOTICE.md.
