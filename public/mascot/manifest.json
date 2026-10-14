@@ -702,10 +702,10 @@
     },
     {
       "name": "asleep-fluid",
-      "description": "Tucks a blanket, drifts off, breathes through three slow cycles and snuggles back into it.",
-      "duration": 10.85,
+      "description": "Sits on folded block legs in a drooping blue nightcap, rests its hands in its lap and breathes quietly through a sleepy nod.",
+      "duration": 11.2,
       "loop": true,
-      "reducedFrame": 4,
+      "reducedFrame": 0,
       "storyVersion": 2,
       "viewBox": [
         -20,
@@ -719,8 +719,8 @@
       "collection": "fluid",
       "title": "Asleep / extended pixel",
       "label": "Asleep / extended pixel",
-      "poseCount": 15,
-      "frameCount": 33,
+      "poseCount": 4,
+      "frameCount": 13,
       "file": "asleep-fluid.svg"
     },
     {

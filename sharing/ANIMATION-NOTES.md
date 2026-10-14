@@ -1,3 +1,9 @@
+# Seated sleep / v1.7.1
+
+Replaced only `asleep-fluid`: four bent rectangular legs stay planted on the original floor, hands rest in the lap, and the torso keeps its original 85x65 block. A blue nightcap follows the head, with a connected drooping tip and delayed pompom settle. Closed eyes, three slow breaths and one small sleepy nod make an 11.2-second loop. There is no blanket or rising sleep-symbol effect. Reduced motion shows the complete seated pose.
+
+The other 61 compiled animations and GIFs are preserved. Transparent exports and download ZIPs include the replacement.
+
 # Story and weight / v1.7.0
 
 Rebuilt all 22 extended activities and ten gags around the approved hammer study. Each authored timeline has named stages, distinctive holds and deliberate recovery. The source uses thick block arms, coarse torso counterbalance and planted original legs. Props are staged around the actor's hands and targets. Deep thought uses steady surfaces; coffee stays on the table. Delegating has shades and floating work cards, with no miniature Claudes.

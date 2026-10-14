@@ -43,12 +43,25 @@ export function buildActivityStories(h) {
   for(const hold of [200,140,300]){b(hold,'Wave out',{right:'wave-out',eyes:'happy',lean:-5});b(100,'Wave through',{right:'wave',eyes:'happy'});b(hold,'Wave in',{right:'wave-in',eyes:'happy'});}
   b(550,'Hold greeting',{right:'wave',eyes:'happy'});b(140,'Lower hand',{right:'half-wave',eyes:'happy'});b(160,'Relax hand',{right:'point',eyes:'happy'});b(550,'Bow',{dy:5,eyes:'closed',left:'down',right:'down'});b(200,'Rise',{eyes:'happy'});b(900,'Spot you',{gazeX:5});
  },{reducedStage:'Hello'});
- add('asleep','Tucks a blanket, drifts off, breathes through three slow cycles and snuggles back into it.',b=>{
-  const blanket=y=>[r(55,y,85,135-y,B),r(55,y,85,5,P),r(70,y+10,55,5,'#5A7885')];
-  b(650,'Sleepy',{eyes:'closed',left:'hold',right:'hold'},blanket(115));for(const y of [115,110,105])b(180,'Tuck blanket',{eyes:'closed',left:'hold',right:'hold'},blanket(y));b(900,'Drift off',{eyes:'closed',dy:5,left:'down',right:'down'},blanket(105));
-  for(let cycle=0;cycle<3;cycle++)for(let phase=0;phase<8;phase++){const dy=[5,5,0,0,0,0,5,5][phase];b(300,'Breathe',{eyes:'closed',dy,left:'down',right:'down'},[...blanket(105+dy),...h.glyph('Z',155,45-phase*10,5,C)]);}
-  b(180,'Snuggle',{eyes:'closed',right:'half-head'},blanket(105));b(550,'Rub sleepy eye',{eyes:'closed',right:'head'},blanket(105));b(180,'Tuck again',{eyes:'closed',right:'half-head'},blanket(110));b(650,'Sleepy',{eyes:'closed',left:'hold',right:'hold'},blanket(115));
- },{reducedStage:'Drift off'});
+ add('asleep','Sits on folded block legs in a drooping blue nightcap, rests its hands in its lap and breathes quietly through a sleepy nod.',b=>{
+  const nightcap=(y,tail=0)=>[
+   r(57,y-7,81,7,P),r(63,y-22,69,15,B),r(73,y-35,49,13,B),
+   r(93,y-45,39,10,B),r(122,y-35,20,10,B),r(132,y-25,10,10+tail,B),
+   r(131,y-16+tail,15,12,P),r(85,y-29,5,5,P),
+  ];
+  const pose={seated:true,eyes:'closed',left:'lap',right:'lap'};
+  b(900,'Seated and asleep',{...pose,dy:10},nightcap(80));
+  for(let cycle=0;cycle<3;cycle++){
+   b(1400,'Breathe in',{...pose,dy:5},nightcap(75));
+   b(200,'Cap settles',{...pose,dy:5},nightcap(75,5));
+   b(1200,'Breathe out',{...pose,dy:10},nightcap(80));
+   if(cycle===1){
+    b(650,'Sleepy nod',{...pose,dy:10,gazeY:5},nightcap(80,5));
+    b(350,'Settle into sleep',{...pose,dy:10},nightcap(80));
+   }
+  }
+  b(900,'Seated and asleep',{...pose,dy:10},nightcap(80));
+ },{reducedStage:'Seated and asleep'});
  add('reading','Finds a passage, turns two deliberate pages, places a bookmark and remembers the useful passage.',b=>{
   const book=()=>h.book(0),pose={left:'hold',right:'hold',gazeY:15};b(700,'Find passage',{...pose,gazeX:-5},book());
   for(let page=0;page<2;page++){for(const x of [-5,0,5])b(380,'Read across',{...pose,gazeX:x},book());b(180,'Catch corner',{...pose,rightBlocks:handAt(130,120)},book());

@@ -1,15 +1,11 @@
-# Story and weight
+# Seated sleep / v1.7.1
 
-All 22 extended activities and ten gags now have deliberate preparation, work, payoff and recovery in the original chunky pixel style. The approved hammering story powers `using-tool-fluid`. Delegating puts on shades and conducts floating task cards, with no miniature Claudes.
+`asleep-fluid` replaces the blanket animation with Claude sitting on folded block legs, wearing a drooping blue nightcap and resting its hands in its lap. Quiet breathing, a delayed cap-tip settle and one sleepy nod form an 11.2-second loop. The reduced-motion pose stays seated with the nightcap on.
 
-Highlights include two page turns and a bookmark, a corrected draft, an amber test and retry, a stamped commit, tabletop coffee preparation, a robot fist bump, a training nightcap, a buffering crank and a launch lever. Deep thought keeps steady surfaces.
+[Preview seated sleep](https://harriszed.github.io/mascot-studio/mascot/?v=1.7.1#asleep-fluid)
 
-The original 22 states and eight accessories are preserved. All 62 SVG/GIF identifiers stay compatible. Done remains a five-second one-shot; walking is a continuous cadence. The ten gags run roughly 10-14 seconds.
+The other 61 animations and all state identifiers are unchanged. Download `mascot-gifs.zip` for all 62 transparent GIFs, `mascot-assets.zip` for SVGs/GIFs and offline previews, `mascot-studio.zip` for the creation skill, or `mascot-studio-source.zip` for the editable project.
 
-[Live activities](https://harriszed.github.io/mascot-studio/mascot/fluid.html?v=1.7.0) | [Live gags](https://harriszed.github.io/mascot-studio/mascot/gags.html?v=1.7.0)
+Validated authored poses and decoded GIF frames, hat attachment and floor contact, loop and reduced-motion behavior, preservation of the other states, and ZIP contents.
 
-Downloads: `mascot-gifs.zip` contains all 62 individual transparent GIFs; `mascot-assets.zip` includes SVGs, GIFs and offline previews; `mascot-studio.zip` is the portable creation skill; `mascot-studio-source.zip` is the complete editable source.
-
-Validated 989 browser poses, 952 decoded revised GIF frames, original preservation, geometry and loops, preview controls, mobile/reduced motion, ZIP integrity and an extracted-source build.
-
-Unofficial community project. Preserve the attribution and artwork reuse status in NOTICE.md. No blanket artwork license is added.
+Unofficial community project. Attribution and artwork reuse status remain in NOTICE.md.

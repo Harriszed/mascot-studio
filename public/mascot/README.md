@@ -178,3 +178,8 @@ The extended activities use separate setup, action and recovery holds, planted f
 
 
 The v1.7 stories use preparation, deliberate work, payoff and recovery. `directing-helpers-fluid` wears shades and dispatches floating task cards; it has no miniature helpers. `using-tool-fluid` is the approved hammering story. The original 30 assets remain unchanged.
+
+
+## Seated sleep / v1.7.1
+
+`asleep-fluid` now sits on folded block legs with a blue nightcap, hands in its lap, quiet breathing and a sleepy nod. The 11.2-second loop replaces the blanket animation. The other 61 states are unchanged.

@@ -2,6 +2,10 @@
 
 62 animated Claude mascot states: 22 originals, 8 accessory variants, 22 extended pixel animations, and 10 extended gags. Transparent SVG exports, a React component, and a reusable coding-agent skill for creating characters, activities, and accessories.
 
+## Seated sleep / v1.7.1
+
+`asleep-fluid` now sits on folded block legs with its hands in its lap and a drooping blue nightcap. The 11.2-second loop uses quiet breathing and one sleepy nod, replacing the blanket animation. [Preview seated sleep](https://harriszed.github.io/mascot-studio/mascot/?v=1.7.1#asleep-fluid). The other 61 animations are unchanged.
+
 ## Story and weight / v1.7.0
 
 The approved hammer animation now powers `using-tool-fluid`. The same approach has been applied to all 22 extended activities and ten gags: preparation, deliberate action, expressive poses, payoff and recovery. Delegating puts on shades and conducts floating task cards, with no little helper mascots. Quiet waiting and continuous walking keep their own rhythms.
@@ -18,13 +22,13 @@ Ten original-style visual jokes: `gag-hallucinate`, `gag-tokens`, `gag-context`,
 
 ## Extended pixel animations
 
-The `*-fluid` collection covers all 22 activities, using the original thick block actor and readable prop interactions. Highlights include weighted hammering, shades and floating task cards, a blanket tuck, two page turns and a bookmark, a corrected draft, an amber test and retry, a stamped commit, and physical memory packing. Identifiers remain compatible with the React component; original states keep their existing behavior.
+The `*-fluid` collection covers all 22 activities, using the original thick block actor and readable prop interactions. Highlights include weighted hammering, shades and floating task cards, seated sleep in a nightcap, two page turns and a bookmark, a corrected draft, an amber test and retry, a stamped commit, and physical memory packing. Identifiers remain compatible with the React component; original states keep their existing behavior.
 
 ![All 22 extended pixel mascot animations](sharing/fluid-showcase.gif)
 
 Open [the side-by-side comparison](https://harriszed.github.io/mascot-studio/mascot/fluid.html). The page also works offline from the asset pack. Each variant is available through the React `state` prop, for example `<ClaudeMascot state="greeting-fluid" />`.
 
-[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) | [**Download v1.7.0**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.7.0) | [**Creation skill**](skills/mascot-studio/SKILL.md)
+[**Live playground**](https://harriszed.github.io/mascot-studio/mascot/) | [**Download v1.7.1**](https://github.com/Harriszed/mascot-studio/releases/tag/v1.7.1) | [**Creation skill**](skills/mascot-studio/SKILL.md)
 
 [![Animated showcase of Claude mascot activity states](sharing/mascot-showcase.gif)](https://harriszed.github.io/mascot-studio/mascot/)
 
