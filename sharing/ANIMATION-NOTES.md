@@ -1,3 +1,9 @@
+# Standing sleep / v1.7.2
+
+`asleep-fluid` returns to the original standing actor with four 11x26 block legs, planted feet and a gentle 5px torso bob. The blue nightcap follows the head. Three staggered sleep marks rise at different sizes, with two tiny trailing dots; each mark leaves the top of the canvas before restarting at the lower right. A full 10.5-second cycle includes three quiet breaths. Reduced motion shows one complete standing sleep pose with its cap and sleep marks.
+
+The other 61 compiled animations and GIFs are unchanged.
+
 # Seated sleep / v1.7.1
 
 Replaced only `asleep-fluid`: four bent rectangular legs stay planted on the original floor, hands rest in the lap, and the torso keeps its original 85x65 block. A blue nightcap follows the head, with a connected drooping tip and delayed pompom settle. Closed eyes, three slow breaths and one small sleepy nod make an 11.2-second loop. There is no blanket or rising sleep-symbol effect. Reduced motion shows the complete seated pose.

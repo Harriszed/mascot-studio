@@ -443,10 +443,10 @@
       "width": 480,
       "height": 440,
       "loop": true,
-      "sourceDurationMs": 11200,
-      "durationMs": 11200,
+      "sourceDurationMs": 10500,
+      "durationMs": 10500,
       "terminalHoldMs": 0,
-      "frameCount": 12
+      "frameCount": 30
     },
     {
       "name": "reading-fluid",

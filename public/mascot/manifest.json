@@ -702,8 +702,8 @@
     },
     {
       "name": "asleep-fluid",
-      "description": "Sits on folded block legs in a drooping blue nightcap, rests its hands in its lap and breathes quietly through a sleepy nod.",
-      "duration": 11.2,
+      "description": "Sleeps standing in a drooping blue nightcap, gently bobs with planted feet, and lets a trail of Z z z drift upward.",
+      "duration": 10.5,
       "loop": true,
       "reducedFrame": 0,
       "storyVersion": 2,
@@ -719,8 +719,8 @@
       "collection": "fluid",
       "title": "Asleep / extended pixel",
       "label": "Asleep / extended pixel",
-      "poseCount": 4,
-      "frameCount": 13,
+      "poseCount": 30,
+      "frameCount": 30,
       "file": "asleep-fluid.svg"
     },
     {
